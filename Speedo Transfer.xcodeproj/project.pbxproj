@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE5D74C72C8B44B000054A6A /* Pods_Speedo_Transfer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA466222A5BEEEA82A35D197 /* Pods_Speedo_Transfer.framework */; };
+		BE5D74C82C8B44B000054A6A /* Pods_Speedo_Transfer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA466222A5BEEEA82A35D197 /* Pods_Speedo_Transfer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE9645102C8B4D3F0017201F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE96450F2C8B4D3F0017201F /* APIManager.swift */; };
+		BE9645152C8B4E1D0017201F /* SignUpBasicInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9645132C8B4E1C0017201F /* SignUpBasicInfoVC.swift */; };
+		BE9645162C8B4E1D0017201F /* SignUpBasicInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE9645142C8B4E1C0017201F /* SignUpBasicInfoVC.xib */; };
+		BE9645192C8B4EE00017201F /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9645182C8B4EDF0017201F /* AppManager.swift */; };
+		BE96451B2C8B53CA0017201F /* UIColor+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE96451A2C8B53CA0017201F /* UIColor+Gradient.swift */; };
+		BED3C7CB2C8AF662005DA505 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED3C7CA2C8AF662005DA505 /* AppDelegate.swift */; };
+		BED3C7D52C8AF662005DA505 /* Speedo_Transfer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BED3C7D32C8AF662005DA505 /* Speedo_Transfer.xcdatamodeld */; };
+		BED3C7D72C8AF664005DA505 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BED3C7D62C8AF664005DA505 /* Assets.xcassets */; };
+		BED3C7DA2C8AF664005DA505 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED3C7D82C8AF664005DA505 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BE5D74C92C8B44B000054A6A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BE5D74C82C8B44B000054A6A /* Pods_Speedo_Transfer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3E883F68ECDC8C8B6C921A23 /* Pods-Speedo Transfer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Speedo Transfer.debug.xcconfig"; path = "Target Support Files/Pods-Speedo Transfer/Pods-Speedo Transfer.debug.xcconfig"; sourceTree = "<group>"; };
+		9C3CF58790C7F9AF4DDEA4FC /* Pods-Speedo Transfer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Speedo Transfer.release.xcconfig"; path = "Target Support Files/Pods-Speedo Transfer/Pods-Speedo Transfer.release.xcconfig"; sourceTree = "<group>"; };
+		BE96450F2C8B4D3F0017201F /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		BE9645132C8B4E1C0017201F /* SignUpBasicInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpBasicInfoVC.swift; sourceTree = "<group>"; };
+		BE9645142C8B4E1C0017201F /* SignUpBasicInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpBasicInfoVC.xib; sourceTree = "<group>"; };
+		BE9645182C8B4EDF0017201F /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		BE96451A2C8B53CA0017201F /* UIColor+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Gradient.swift"; sourceTree = "<group>"; };
+		BED3C7C72C8AF662005DA505 /* Speedo Transfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Speedo Transfer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BED3C7CA2C8AF662005DA505 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BED3C7D42C8AF662005DA505 /* Speedo_Transfer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Speedo_Transfer.xcdatamodel; sourceTree = "<group>"; };
+		BED3C7D62C8AF664005DA505 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BED3C7D92C8AF664005DA505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BED3C7DB2C8AF664005DA505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA466222A5BEEEA82A35D197 /* Pods_Speedo_Transfer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Speedo_Transfer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BED3C7C42C8AF660005DA505 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE5D74C72C8B44B000054A6A /* Pods_Speedo_Transfer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		642997D6C6944AD65A07D691 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA466222A5BEEEA82A35D197 /* Pods_Speedo_Transfer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B483F47AB87C50E77B8AE225 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E883F68ECDC8C8B6C921A23 /* Pods-Speedo Transfer.debug.xcconfig */,
+				9C3CF58790C7F9AF4DDEA4FC /* Pods-Speedo Transfer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BE5D74C62C8B44B000054A6A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BED3C7CA2C8AF662005DA505 /* AppDelegate.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		BE5D74CA2C8B44B000054A6A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BE5D74CB2C8B44B000054A6A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE5D74CD2C8B44B000054A6A /* Authentication */,
+				BE5D74D12C8B4B4800054A6A /* Error */,
+				BE5D74CF2C8B4B0E00054A6A /* More */,
+				BE5D74D02C8B4B1E00054A6A /* Notifications */,
+				BE5D74D32C8B4B5F00054A6A /* Profile */,
+				BE5D74D22C8B4B5300054A6A /* Transactions */,
+				BE5D74CE2C8B4B0200054A6A /* Transfer */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BE5D74CC2C8B44B000054A6A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BE5D74CD2C8B44B000054A6A /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				BE9645132C8B4E1C0017201F /* SignUpBasicInfoVC.swift */,
+				BE9645142C8B4E1C0017201F /* SignUpBasicInfoVC.xib */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		BE5D74CE2C8B4B0200054A6A /* Transfer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Transfer;
+			sourceTree = "<group>";
+		};
+		BE5D74CF2C8B4B0E00054A6A /* More */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		BE5D74D02C8B4B1E00054A6A /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		BE5D74D12C8B4B4800054A6A /* Error */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		BE5D74D22C8B4B5300054A6A /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		BE5D74D32C8B4B5F00054A6A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		BE5D74D42C8B4B8200054A6A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BE5D74D52C8B4BBA00054A6A /* Images */,
+				BE96450D2C8B4D080017201F /* LocalStorage */,
+				BE5D74D62C8B4BCE00054A6A /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BE5D74D52C8B4BBA00054A6A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BED3C7D62C8AF664005DA505 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		BE5D74D62C8B4BCE00054A6A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BED3C7D82C8AF664005DA505 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		BE96450D2C8B4D080017201F /* LocalStorage */ = {
+			isa = PBXGroup;
+			children = (
+				BED3C7D32C8AF662005DA505 /* Speedo_Transfer.xcdatamodeld */,
+			);
+			path = LocalStorage;
+			sourceTree = "<group>";
+		};
+		BE96450E2C8B4D290017201F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BE96450F2C8B4D3F0017201F /* APIManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		BE9645112C8B4D680017201F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BE96451A2C8B53CA0017201F /* UIColor+Gradient.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BE9645122C8B4D730017201F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		BE9645172C8B4E6D0017201F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BE9645182C8B4EDF0017201F /* AppManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		BED3C7BE2C8AF660005DA505 = {
+			isa = PBXGroup;
+			children = (
+				BED3C7C92C8AF662005DA505 /* Speedo Transfer */,
+				BED3C7C82C8AF662005DA505 /* Products */,
+				B483F47AB87C50E77B8AE225 /* Pods */,
+				642997D6C6944AD65A07D691 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BED3C7C82C8AF662005DA505 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BED3C7C72C8AF662005DA505 /* Speedo Transfer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BED3C7C92C8AF662005DA505 /* Speedo Transfer */ = {
+			isa = PBXGroup;
+			children = (
+				BE5D74CA2C8B44B000054A6A /* Model */,
+				BE5D74CB2C8B44B000054A6A /* View */,
+				BE5D74CC2C8B44B000054A6A /* Presenter */,
+				BE5D74C62C8B44B000054A6A /* Shared */,
+				BE9645172C8B4E6D0017201F /* Manager */,
+				BE5D74D42C8B4B8200054A6A /* Resources */,
+				BE9645122C8B4D730017201F /* Utilities */,
+				BE9645112C8B4D680017201F /* Extensions */,
+				BE96450E2C8B4D290017201F /* Networking */,
+				BED3C7DB2C8AF664005DA505 /* Info.plist */,
+			);
+			path = "Speedo Transfer";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BED3C7C62C8AF660005DA505 /* Speedo Transfer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BED3C7DE2C8AF664005DA505 /* Build configuration list for PBXNativeTarget "Speedo Transfer" */;
+			buildPhases = (
+				F59843FFADD20F6A5D485D91 /* [CP] Check Pods Manifest.lock */,
+				BED3C7C32C8AF660005DA505 /* Sources */,
+				BED3C7C42C8AF660005DA505 /* Frameworks */,
+				BED3C7C52C8AF660005DA505 /* Resources */,
+				5420ED6B19C77775EB313B60 /* [CP] Embed Pods Frameworks */,
+				BE5D74C92C8B44B000054A6A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Speedo Transfer";
+			productName = "Speedo Transfer";
+			productReference = BED3C7C72C8AF662005DA505 /* Speedo Transfer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BED3C7BF2C8AF660005DA505 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					BED3C7C62C8AF660005DA505 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = BED3C7C22C8AF660005DA505 /* Build configuration list for PBXProject "Speedo Transfer" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BED3C7BE2C8AF660005DA505;
+			productRefGroup = BED3C7C82C8AF662005DA505 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BED3C7C62C8AF660005DA505 /* Speedo Transfer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BED3C7C52C8AF660005DA505 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BED3C7DA2C8AF664005DA505 /* LaunchScreen.storyboard in Resources */,
+				BE9645162C8B4E1D0017201F /* SignUpBasicInfoVC.xib in Resources */,
+				BED3C7D72C8AF664005DA505 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5420ED6B19C77775EB313B60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Speedo Transfer/Pods-Speedo Transfer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Speedo Transfer/Pods-Speedo Transfer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Speedo Transfer/Pods-Speedo Transfer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F59843FFADD20F6A5D485D91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Speedo Transfer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BED3C7C32C8AF660005DA505 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE9645102C8B4D3F0017201F /* APIManager.swift in Sources */,
+				BE96451B2C8B53CA0017201F /* UIColor+Gradient.swift in Sources */,
+				BE9645192C8B4EE00017201F /* AppManager.swift in Sources */,
+				BED3C7D52C8AF662005DA505 /* Speedo_Transfer.xcdatamodeld in Sources */,
+				BED3C7CB2C8AF662005DA505 /* AppDelegate.swift in Sources */,
+				BE9645152C8B4E1D0017201F /* SignUpBasicInfoVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BED3C7D82C8AF664005DA505 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BED3C7D92C8AF664005DA505 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BED3C7DC2C8AF664005DA505 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BED3C7DD2C8AF664005DA505 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BED3C7DF2C8AF664005DA505 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E883F68ECDC8C8B6C921A23 /* Pods-Speedo Transfer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Speedo Transfer/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Internship.Speedo-Transfer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BED3C7E02C8AF664005DA505 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C3CF58790C7F9AF4DDEA4FC /* Pods-Speedo Transfer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Speedo Transfer/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Internship.Speedo-Transfer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BED3C7C22C8AF660005DA505 /* Build configuration list for PBXProject "Speedo Transfer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BED3C7DC2C8AF664005DA505 /* Debug */,
+				BED3C7DD2C8AF664005DA505 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BED3C7DE2C8AF664005DA505 /* Build configuration list for PBXNativeTarget "Speedo Transfer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BED3C7DF2C8AF664005DA505 /* Debug */,
+				BED3C7E02C8AF664005DA505 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BED3C7D32C8AF662005DA505 /* Speedo_Transfer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BED3C7D42C8AF662005DA505 /* Speedo_Transfer.xcdatamodel */,
+			);
+			currentVersion = BED3C7D42C8AF662005DA505 /* Speedo_Transfer.xcdatamodel */;
+			path = Speedo_Transfer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BED3C7BF2C8AF660005DA505 /* Project object */;
+}
