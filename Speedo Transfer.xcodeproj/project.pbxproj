@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE03362F2C8CCBDB00445276 /* AuthenticationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE03362E2C8CCBDA00445276 /* AuthenticationPresenter.swift */; };
+		BE0336312C8CCC3400445276 /* AuthenticationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0336302C8CCC3300445276 /* AuthenticationProtocol.swift */; };
 		BE5D74C72C8B44B000054A6A /* Pods_Speedo_Transfer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA466222A5BEEEA82A35D197 /* Pods_Speedo_Transfer.framework */; };
 		BE5D74C82C8B44B000054A6A /* Pods_Speedo_Transfer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA466222A5BEEEA82A35D197 /* Pods_Speedo_Transfer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BE9645102C8B4D3F0017201F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE96450F2C8B4D3F0017201F /* APIManager.swift */; };
@@ -14,10 +16,19 @@
 		BE9645162C8B4E1D0017201F /* SignUpBasicInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE9645142C8B4E1C0017201F /* SignUpBasicInfoVC.xib */; };
 		BE9645192C8B4EE00017201F /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9645182C8B4EDF0017201F /* AppManager.swift */; };
 		BE96451B2C8B53CA0017201F /* UIColor+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE96451A2C8B53CA0017201F /* UIColor+Gradient.swift */; };
+		BE96451E2C8B82250017201F /* SignUpAdditionalInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE96451C2C8B82250017201F /* SignUpAdditionalInfoVC.swift */; };
+		BE96451F2C8B82250017201F /* SignUpAdditionalInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE96451D2C8B82250017201F /* SignUpAdditionalInfoVC.xib */; };
+		BECC04B22C8CDCB20087D59A /* UIViewController+Alert+Toggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECC04B12C8CDCB20087D59A /* UIViewController+Alert+Toggle.swift */; };
+		BECC04B42C8CDCC70087D59A /* String+Trim.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECC04B32C8CDCC70087D59A /* String+Trim.swift */; };
 		BED3C7CB2C8AF662005DA505 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED3C7CA2C8AF662005DA505 /* AppDelegate.swift */; };
 		BED3C7D52C8AF662005DA505 /* Speedo_Transfer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BED3C7D32C8AF662005DA505 /* Speedo_Transfer.xcdatamodeld */; };
 		BED3C7D72C8AF664005DA505 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BED3C7D62C8AF664005DA505 /* Assets.xcassets */; };
 		BED3C7DA2C8AF664005DA505 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED3C7D82C8AF664005DA505 /* LaunchScreen.storyboard */; };
+		BEEA40662C8CA7F1009171BA /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEA40642C8CA7F0009171BA /* SignInVC.swift */; };
+		BEEA40672C8CA7F1009171BA /* SignInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEEA40652C8CA7F0009171BA /* SignInVC.xib */; };
+		BEEA40692C8CAAAC009171BA /* TextFieldHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEA40682C8CAAAB009171BA /* TextFieldHelper.swift */; };
+		BEEA406C2C8CC063009171BA /* TimeOutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEA406A2C8CC063009171BA /* TimeOutVC.swift */; };
+		BEEA406D2C8CC063009171BA /* TimeOutVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEEA406B2C8CC063009171BA /* TimeOutVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,17 +48,28 @@
 /* Begin PBXFileReference section */
 		3E883F68ECDC8C8B6C921A23 /* Pods-Speedo Transfer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Speedo Transfer.debug.xcconfig"; path = "Target Support Files/Pods-Speedo Transfer/Pods-Speedo Transfer.debug.xcconfig"; sourceTree = "<group>"; };
 		9C3CF58790C7F9AF4DDEA4FC /* Pods-Speedo Transfer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Speedo Transfer.release.xcconfig"; path = "Target Support Files/Pods-Speedo Transfer/Pods-Speedo Transfer.release.xcconfig"; sourceTree = "<group>"; };
+		BE03362E2C8CCBDA00445276 /* AuthenticationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationPresenter.swift; sourceTree = "<group>"; };
+		BE0336302C8CCC3300445276 /* AuthenticationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationProtocol.swift; sourceTree = "<group>"; };
 		BE96450F2C8B4D3F0017201F /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		BE9645132C8B4E1C0017201F /* SignUpBasicInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpBasicInfoVC.swift; sourceTree = "<group>"; };
 		BE9645142C8B4E1C0017201F /* SignUpBasicInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpBasicInfoVC.xib; sourceTree = "<group>"; };
 		BE9645182C8B4EDF0017201F /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		BE96451A2C8B53CA0017201F /* UIColor+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Gradient.swift"; sourceTree = "<group>"; };
+		BE96451C2C8B82250017201F /* SignUpAdditionalInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpAdditionalInfoVC.swift; sourceTree = "<group>"; };
+		BE96451D2C8B82250017201F /* SignUpAdditionalInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpAdditionalInfoVC.xib; sourceTree = "<group>"; };
+		BECC04B12C8CDCB20087D59A /* UIViewController+Alert+Toggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert+Toggle.swift"; sourceTree = "<group>"; };
+		BECC04B32C8CDCC70087D59A /* String+Trim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Trim.swift"; sourceTree = "<group>"; };
 		BED3C7C72C8AF662005DA505 /* Speedo Transfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Speedo Transfer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED3C7CA2C8AF662005DA505 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BED3C7D42C8AF662005DA505 /* Speedo_Transfer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Speedo_Transfer.xcdatamodel; sourceTree = "<group>"; };
 		BED3C7D62C8AF664005DA505 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BED3C7D92C8AF664005DA505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BED3C7DB2C8AF664005DA505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEEA40642C8CA7F0009171BA /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		BEEA40652C8CA7F0009171BA /* SignInVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInVC.xib; sourceTree = "<group>"; };
+		BEEA40682C8CAAAB009171BA /* TextFieldHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldHelper.swift; sourceTree = "<group>"; };
+		BEEA406A2C8CC063009171BA /* TimeOutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOutVC.swift; sourceTree = "<group>"; };
+		BEEA406B2C8CC063009171BA /* TimeOutVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeOutVC.xib; sourceTree = "<group>"; };
 		CA466222A5BEEEA82A35D197 /* Pods_Speedo_Transfer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Speedo_Transfer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -112,6 +134,7 @@
 		BE5D74CC2C8B44B000054A6A /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				BE03362E2C8CCBDA00445276 /* AuthenticationPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -121,6 +144,12 @@
 			children = (
 				BE9645132C8B4E1C0017201F /* SignUpBasicInfoVC.swift */,
 				BE9645142C8B4E1C0017201F /* SignUpBasicInfoVC.xib */,
+				BE96451C2C8B82250017201F /* SignUpAdditionalInfoVC.swift */,
+				BE96451D2C8B82250017201F /* SignUpAdditionalInfoVC.xib */,
+				BEEA40642C8CA7F0009171BA /* SignInVC.swift */,
+				BEEA40652C8CA7F0009171BA /* SignInVC.xib */,
+				BEEA406A2C8CC063009171BA /* TimeOutVC.swift */,
+				BEEA406B2C8CC063009171BA /* TimeOutVC.xib */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -213,6 +242,8 @@
 			isa = PBXGroup;
 			children = (
 				BE96451A2C8B53CA0017201F /* UIColor+Gradient.swift */,
+				BECC04B12C8CDCB20087D59A /* UIViewController+Alert+Toggle.swift */,
+				BECC04B32C8CDCC70087D59A /* String+Trim.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -230,6 +261,15 @@
 				BE9645182C8B4EDF0017201F /* AppManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		BECC04B52C8CDCC70087D59A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BEEA40682C8CAAAB009171BA /* TextFieldHelper.swift */,
+				BE0336302C8CCC3300445276 /* AuthenticationProtocol.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		BED3C7BE2C8AF660005DA505 = {
@@ -253,6 +293,7 @@
 		BED3C7C92C8AF662005DA505 /* Speedo Transfer */ = {
 			isa = PBXGroup;
 			children = (
+				BECC04B52C8CDCC70087D59A /* Helpers */,
 				BE5D74CA2C8B44B000054A6A /* Model */,
 				BE5D74CB2C8B44B000054A6A /* View */,
 				BE5D74CC2C8B44B000054A6A /* Presenter */,
@@ -328,9 +369,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEEA406D2C8CC063009171BA /* TimeOutVC.xib in Resources */,
+				BEEA40672C8CA7F1009171BA /* SignInVC.xib in Resources */,
 				BED3C7DA2C8AF664005DA505 /* LaunchScreen.storyboard in Resources */,
 				BE9645162C8B4E1D0017201F /* SignUpBasicInfoVC.xib in Resources */,
 				BED3C7D72C8AF664005DA505 /* Assets.xcassets in Resources */,
+				BE96451F2C8B82250017201F /* SignUpAdditionalInfoVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,10 +429,18 @@
 			files = (
 				BE9645102C8B4D3F0017201F /* APIManager.swift in Sources */,
 				BE96451B2C8B53CA0017201F /* UIColor+Gradient.swift in Sources */,
+				BECC04B42C8CDCC70087D59A /* String+Trim.swift in Sources */,
+				BEEA40692C8CAAAC009171BA /* TextFieldHelper.swift in Sources */,
+				BE03362F2C8CCBDB00445276 /* AuthenticationPresenter.swift in Sources */,
+				BECC04B22C8CDCB20087D59A /* UIViewController+Alert+Toggle.swift in Sources */,
+				BEEA40662C8CA7F1009171BA /* SignInVC.swift in Sources */,
 				BE9645192C8B4EE00017201F /* AppManager.swift in Sources */,
 				BED3C7D52C8AF662005DA505 /* Speedo_Transfer.xcdatamodeld in Sources */,
+				BE96451E2C8B82250017201F /* SignUpAdditionalInfoVC.swift in Sources */,
 				BED3C7CB2C8AF662005DA505 /* AppDelegate.swift in Sources */,
+				BEEA406C2C8CC063009171BA /* TimeOutVC.swift in Sources */,
 				BE9645152C8B4E1D0017201F /* SignUpBasicInfoVC.swift in Sources */,
+				BE0336312C8CCC3400445276 /* AuthenticationProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
