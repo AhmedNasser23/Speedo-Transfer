@@ -11,7 +11,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpBasicInfoVC" customModule="Speedo_Transfer" customModuleProvider="target">
             <connections>
                 <outlet property="InnerView" destination="y9a-Jh-Bm4" id="qxB-qI-Uyz"/>
-                <outlet property="Outerview" destination="i5M-Pr-FkT" id="ZlC-Zs-rWf"/>
                 <outlet property="confirmedPasswordTextField" destination="xDo-VJ-sJP" id="eYU-Wt-Eij"/>
                 <outlet property="emailTextField" destination="5wt-6L-EJ5" id="a6T-Aa-hbM"/>
                 <outlet property="fullNameTextField" destination="Wee-OJ-dML" id="aLt-WQ-WsA"/>

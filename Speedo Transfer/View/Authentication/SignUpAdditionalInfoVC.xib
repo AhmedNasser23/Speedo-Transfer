@@ -13,7 +13,6 @@
                 <outlet property="countryTextField" destination="Czc-LG-90v" id="lSM-jN-WGK"/>
                 <outlet property="dateOfBirthTextField" destination="ToX-Nq-opa" id="OEb-Yw-UY6"/>
                 <outlet property="innerView" destination="btr-54-cAh" id="xDm-t0-tXU"/>
-                <outlet property="outerView" destination="i5M-Pr-FkT" id="hbh-1F-Uoj"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

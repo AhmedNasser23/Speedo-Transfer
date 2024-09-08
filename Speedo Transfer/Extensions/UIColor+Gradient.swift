@@ -23,13 +23,13 @@ extension UIColor {
         self.init(red: red, green: green, blue: blue, alpha: 1.0)
     }
     
-    static func setupBackgroundColor(for view: UIView, customColor: UIColor = UIColor(hex: "FFC1C7")) {
+    static func setupBackgroundColor(for view: UIView, topColor: UIColor = UIColor(hex: "FFFFFF"), bottomColor: UIColor = UIColor(hex: "FFFFFF")) {
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = view.bounds
         
         gradientLayer.colors = [
-            UIColor.systemBackground.cgColor,
-            customColor.cgColor
+            topColor.cgColor,
+            bottomColor.cgColor
         ]
         
         gradientLayer.locations = [0.0, 0.5, 1.0]

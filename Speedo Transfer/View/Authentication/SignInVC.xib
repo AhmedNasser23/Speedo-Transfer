@@ -12,7 +12,6 @@
             <connections>
                 <outlet property="emailTextField" destination="ZLK-No-0bG" id="815-IR-ShF"/>
                 <outlet property="innerView" destination="UWv-Td-fg1" id="gO9-j2-TBx"/>
-                <outlet property="outerView" destination="i5M-Pr-FkT" id="F0T-FH-f7S"/>
                 <outlet property="passwordTextField" destination="G0I-Lg-3vI" id="0yU-Ou-RXB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

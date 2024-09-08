@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		BE03362F2C8CCBDB00445276 /* AuthenticationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE03362E2C8CCBDA00445276 /* AuthenticationPresenter.swift */; };
 		BE0336312C8CCC3400445276 /* AuthenticationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0336302C8CCC3300445276 /* AuthenticationProtocol.swift */; };
+		BE5B8B942C8DBBF800092BF0 /* ErrorInternetConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B8B922C8DBBF700092BF0 /* ErrorInternetConnection.swift */; };
+		BE5B8B952C8DBBF800092BF0 /* ErrorInternetConnection.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE5B8B932C8DBBF800092BF0 /* ErrorInternetConnection.xib */; };
+		BE5B8B982C8DBC2000092BF0 /* ErrorServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B8B962C8DBC1F00092BF0 /* ErrorServer.swift */; };
+		BE5B8B992C8DBC2000092BF0 /* ErrorServer.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE5B8B972C8DBC2000092BF0 /* ErrorServer.xib */; };
 		BE5D74C72C8B44B000054A6A /* Pods_Speedo_Transfer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA466222A5BEEEA82A35D197 /* Pods_Speedo_Transfer.framework */; };
 		BE5D74C82C8B44B000054A6A /* Pods_Speedo_Transfer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA466222A5BEEEA82A35D197 /* Pods_Speedo_Transfer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BE9645102C8B4D3F0017201F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE96450F2C8B4D3F0017201F /* APIManager.swift */; };
@@ -50,6 +54,10 @@
 		9C3CF58790C7F9AF4DDEA4FC /* Pods-Speedo Transfer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Speedo Transfer.release.xcconfig"; path = "Target Support Files/Pods-Speedo Transfer/Pods-Speedo Transfer.release.xcconfig"; sourceTree = "<group>"; };
 		BE03362E2C8CCBDA00445276 /* AuthenticationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationPresenter.swift; sourceTree = "<group>"; };
 		BE0336302C8CCC3300445276 /* AuthenticationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationProtocol.swift; sourceTree = "<group>"; };
+		BE5B8B922C8DBBF700092BF0 /* ErrorInternetConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorInternetConnection.swift; sourceTree = "<group>"; };
+		BE5B8B932C8DBBF800092BF0 /* ErrorInternetConnection.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorInternetConnection.xib; sourceTree = "<group>"; };
+		BE5B8B962C8DBC1F00092BF0 /* ErrorServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorServer.swift; sourceTree = "<group>"; };
+		BE5B8B972C8DBC2000092BF0 /* ErrorServer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorServer.xib; sourceTree = "<group>"; };
 		BE96450F2C8B4D3F0017201F /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		BE9645132C8B4E1C0017201F /* SignUpBasicInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpBasicInfoVC.swift; sourceTree = "<group>"; };
 		BE9645142C8B4E1C0017201F /* SignUpBasicInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpBasicInfoVC.xib; sourceTree = "<group>"; };
@@ -178,6 +186,10 @@
 		BE5D74D12C8B4B4800054A6A /* Error */ = {
 			isa = PBXGroup;
 			children = (
+				BE5B8B922C8DBBF700092BF0 /* ErrorInternetConnection.swift */,
+				BE5B8B932C8DBBF800092BF0 /* ErrorInternetConnection.xib */,
+				BE5B8B962C8DBC1F00092BF0 /* ErrorServer.swift */,
+				BE5B8B972C8DBC2000092BF0 /* ErrorServer.xib */,
 			);
 			path = Error;
 			sourceTree = "<group>";
@@ -370,6 +382,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEEA406D2C8CC063009171BA /* TimeOutVC.xib in Resources */,
+				BE5B8B952C8DBBF800092BF0 /* ErrorInternetConnection.xib in Resources */,
+				BE5B8B992C8DBC2000092BF0 /* ErrorServer.xib in Resources */,
 				BEEA40672C8CA7F1009171BA /* SignInVC.xib in Resources */,
 				BED3C7DA2C8AF664005DA505 /* LaunchScreen.storyboard in Resources */,
 				BE9645162C8B4E1D0017201F /* SignUpBasicInfoVC.xib in Resources */,
@@ -433,6 +447,7 @@
 				BEEA40692C8CAAAC009171BA /* TextFieldHelper.swift in Sources */,
 				BE03362F2C8CCBDB00445276 /* AuthenticationPresenter.swift in Sources */,
 				BECC04B22C8CDCB20087D59A /* UIViewController+Alert+Toggle.swift in Sources */,
+				BE5B8B982C8DBC2000092BF0 /* ErrorServer.swift in Sources */,
 				BEEA40662C8CA7F1009171BA /* SignInVC.swift in Sources */,
 				BE9645192C8B4EE00017201F /* AppManager.swift in Sources */,
 				BED3C7D52C8AF662005DA505 /* Speedo_Transfer.xcdatamodeld in Sources */,
@@ -441,6 +456,7 @@
 				BEEA406C2C8CC063009171BA /* TimeOutVC.swift in Sources */,
 				BE9645152C8B4E1D0017201F /* SignUpBasicInfoVC.swift in Sources */,
 				BE0336312C8CCC3400445276 /* AuthenticationProtocol.swift in Sources */,
+				BE5B8B942C8DBBF800092BF0 /* ErrorInternetConnection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

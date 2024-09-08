@@ -10,7 +10,6 @@ import UIKit
 class SignUpBasicInfoVC: UIViewController {
 
     // MARK: - Outlets
-    @IBOutlet var Outerview: UIView!
     @IBOutlet weak var InnerView: UIView!
     @IBOutlet weak var fullNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
@@ -43,8 +42,8 @@ class SignUpBasicInfoVC: UIViewController {
     private func setUpScreen() {
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.navigationController?.isNavigationBarHidden = true
-        UIColor.setupBackgroundColor(for: self.Outerview)
-        UIColor.setupBackgroundColor(for: self.InnerView)
+        UIColor.setupBackgroundColor(for: self.view, bottomColor: UIColor(hex: "FFC1C7"))
+        UIColor.setupBackgroundColor(for: self.InnerView, bottomColor: UIColor(hex: "FFC1C7"))
 
         TextFieldHelper.addRightIcon(to: fullNameTextField, imageName: "person.fill")
         TextFieldHelper.addRightIcon(to: emailTextField, imageName: "envelope.fill")

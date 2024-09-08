@@ -3,14 +3,11 @@ import UIKit
 class SignUpAdditionalInfoVC: UIViewController {
 
     // MARK: - Outlets
-    
-    @IBOutlet var outerView: UIView!
     @IBOutlet weak var innerView: UIView!
     @IBOutlet weak var countryTextField: UITextField!
     @IBOutlet weak var dateOfBirthTextField: UITextField!
     
     // MARK: - Properties
-    
     let countries = ["Egypt", "Palestine", "Syrian"]
     let countryFlags = ["eg", "pa", "sy"]
     
@@ -21,7 +18,6 @@ class SignUpAdditionalInfoVC: UIViewController {
     private var presenter: SignUpPresenterProtocol!
     
     // MARK: - Lifecycle Methods
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,7 +31,6 @@ class SignUpAdditionalInfoVC: UIViewController {
     }
     
     // MARK: - Action Methods
-    
     @IBAction func continueBtnTapped(_ sender: UIButton) {
         self.presenter.tryRegister?(country: countryTextField.text, dateOfBirth: dateOfBirthTextField.text)
     }
@@ -46,15 +41,14 @@ class SignUpAdditionalInfoVC: UIViewController {
     }
     
     // MARK: - Setup Methods
-    
     private func setupNavigationBar() {
         self.navigationController?.navigationBar.tintColor = UIColor.black
         self.navigationController?.isNavigationBarHidden = false
     }
     
     private func setupViews() {
-        UIColor.setupBackgroundColor(for: self.outerView)
-        UIColor.setupBackgroundColor(for: self.innerView)
+        UIColor.setupBackgroundColor(for: self.view, bottomColor: UIColor(hex: "FFC1C7"))
+        UIColor.setupBackgroundColor(for: self.innerView, bottomColor: UIColor(hex: "FFC1C7"))
     }
     
     private func setupPickerView() {
@@ -99,7 +93,6 @@ class SignUpAdditionalInfoVC: UIViewController {
     }
     
     // MARK: - PickerView Methods
-    
     @objc private func showPickerView() {
         pickerView.backgroundColor = .white
         countryTextField.inputView = pickerView
@@ -120,7 +113,6 @@ class SignUpAdditionalInfoVC: UIViewController {
 }
 
 // MARK: - UIPickerView DataSource and Delegate
-
 extension SignUpAdditionalInfoVC: UIPickerViewDelegate, UIPickerViewDataSource {
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -155,6 +147,7 @@ extension SignUpAdditionalInfoVC: UIPickerViewDelegate, UIPickerViewDataSource {
     }
 }
 
+// MARK: - SignUpAdditionalInfoVC Extension
 extension SignUpAdditionalInfoVC: AuthenticationProtocol {
     func showMessage(title: String?, message: String?) {
         self.showAlert(title: title, message: message)
