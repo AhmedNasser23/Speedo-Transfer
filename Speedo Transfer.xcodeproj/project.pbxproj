@@ -22,7 +22,18 @@
 		BE96451B2C8B53CA0017201F /* UIColor+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE96451A2C8B53CA0017201F /* UIColor+Gradient.swift */; };
 		BE96451E2C8B82250017201F /* SignUpAdditionalInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE96451C2C8B82250017201F /* SignUpAdditionalInfoVC.swift */; };
 		BE96451F2C8B82250017201F /* SignUpAdditionalInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE96451D2C8B82250017201F /* SignUpAdditionalInfoVC.xib */; };
-		BECC04B22C8CDCB20087D59A /* UIViewController+Alert+Toggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECC04B12C8CDCB20087D59A /* UIViewController+Alert+Toggle.swift */; };
+		BEC2FC962C8EF7EE00CCF8DD /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC2FC942C8EF7EE00CCF8DD /* HomeVC.swift */; };
+		BEC2FC972C8EF7EE00CCF8DD /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEC2FC952C8EF7EE00CCF8DD /* HomeVC.xib */; };
+		BEC2FC9A2C8EF86000CCF8DD /* TransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC2FC982C8EF86000CCF8DD /* TransferVC.swift */; };
+		BEC2FC9B2C8EF86000CCF8DD /* TransferVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEC2FC992C8EF86000CCF8DD /* TransferVC.xib */; };
+		BEC2FC9E2C8EF89900CCF8DD /* TransactionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC2FC9C2C8EF89900CCF8DD /* TransactionsVC.swift */; };
+		BEC2FC9F2C8EF89900CCF8DD /* TransactionsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEC2FC9D2C8EF89900CCF8DD /* TransactionsVC.xib */; };
+		BEC2FCA22C8EF8F000CCF8DD /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC2FCA02C8EF8EF00CCF8DD /* MoreVC.swift */; };
+		BEC2FCA32C8EF8F000CCF8DD /* MoreVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEC2FCA12C8EF8EF00CCF8DD /* MoreVC.xib */; };
+		BEC2FCA52C8EFB4700CCF8DD /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC2FCA42C8EFB4600CCF8DD /* TabBarController.swift */; };
+		BEC2FCA92C8EFDD700CCF8DD /* MyCardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC2FCA72C8EFDD700CCF8DD /* MyCardsVC.swift */; };
+		BEC2FCAA2C8EFDD800CCF8DD /* MyCardsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEC2FCA82C8EFDD700CCF8DD /* MyCardsVC.xib */; };
+		BECC04B22C8CDCB20087D59A /* UIViewController+Alert+Toggle+SetUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECC04B12C8CDCB20087D59A /* UIViewController+Alert+Toggle+SetUpScreen.swift */; };
 		BECC04B42C8CDCC70087D59A /* String+Trim.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECC04B32C8CDCC70087D59A /* String+Trim.swift */; };
 		BED3C7CB2C8AF662005DA505 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED3C7CA2C8AF662005DA505 /* AppDelegate.swift */; };
 		BED3C7D52C8AF662005DA505 /* Speedo_Transfer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BED3C7D32C8AF662005DA505 /* Speedo_Transfer.xcdatamodeld */; };
@@ -65,7 +76,18 @@
 		BE96451A2C8B53CA0017201F /* UIColor+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Gradient.swift"; sourceTree = "<group>"; };
 		BE96451C2C8B82250017201F /* SignUpAdditionalInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpAdditionalInfoVC.swift; sourceTree = "<group>"; };
 		BE96451D2C8B82250017201F /* SignUpAdditionalInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpAdditionalInfoVC.xib; sourceTree = "<group>"; };
-		BECC04B12C8CDCB20087D59A /* UIViewController+Alert+Toggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert+Toggle.swift"; sourceTree = "<group>"; };
+		BEC2FC942C8EF7EE00CCF8DD /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		BEC2FC952C8EF7EE00CCF8DD /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		BEC2FC982C8EF86000CCF8DD /* TransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferVC.swift; sourceTree = "<group>"; };
+		BEC2FC992C8EF86000CCF8DD /* TransferVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferVC.xib; sourceTree = "<group>"; };
+		BEC2FC9C2C8EF89900CCF8DD /* TransactionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsVC.swift; sourceTree = "<group>"; };
+		BEC2FC9D2C8EF89900CCF8DD /* TransactionsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionsVC.xib; sourceTree = "<group>"; };
+		BEC2FCA02C8EF8EF00CCF8DD /* MoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
+		BEC2FCA12C8EF8EF00CCF8DD /* MoreVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreVC.xib; sourceTree = "<group>"; };
+		BEC2FCA42C8EFB4600CCF8DD /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		BEC2FCA72C8EFDD700CCF8DD /* MyCardsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardsVC.swift; sourceTree = "<group>"; };
+		BEC2FCA82C8EFDD700CCF8DD /* MyCardsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCardsVC.xib; sourceTree = "<group>"; };
+		BECC04B12C8CDCB20087D59A /* UIViewController+Alert+Toggle+SetUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert+Toggle+SetUpScreen.swift"; sourceTree = "<group>"; };
 		BECC04B32C8CDCC70087D59A /* String+Trim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Trim.swift"; sourceTree = "<group>"; };
 		BED3C7C72C8AF662005DA505 /* Speedo Transfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Speedo Transfer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED3C7CA2C8AF662005DA505 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +150,7 @@
 		BE5D74CB2C8B44B000054A6A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BEC2FCA62C8EFDAF00CCF8DD /* MyCards */,
 				BE5D74CD2C8B44B000054A6A /* Authentication */,
 				BE5D74D12C8B4B4800054A6A /* Error */,
 				BE5D74CF2C8B4B0E00054A6A /* More */,
@@ -135,6 +158,7 @@
 				BE5D74D32C8B4B5F00054A6A /* Profile */,
 				BE5D74D22C8B4B5300054A6A /* Transactions */,
 				BE5D74CE2C8B4B0200054A6A /* Transfer */,
+				BEC2FCA42C8EFB4600CCF8DD /* TabBarController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -165,6 +189,10 @@
 		BE5D74CE2C8B4B0200054A6A /* Transfer */ = {
 			isa = PBXGroup;
 			children = (
+				BEC2FC942C8EF7EE00CCF8DD /* HomeVC.swift */,
+				BEC2FC952C8EF7EE00CCF8DD /* HomeVC.xib */,
+				BEC2FC982C8EF86000CCF8DD /* TransferVC.swift */,
+				BEC2FC992C8EF86000CCF8DD /* TransferVC.xib */,
 			);
 			path = Transfer;
 			sourceTree = "<group>";
@@ -172,6 +200,8 @@
 		BE5D74CF2C8B4B0E00054A6A /* More */ = {
 			isa = PBXGroup;
 			children = (
+				BEC2FCA02C8EF8EF00CCF8DD /* MoreVC.swift */,
+				BEC2FCA12C8EF8EF00CCF8DD /* MoreVC.xib */,
 			);
 			path = More;
 			sourceTree = "<group>";
@@ -197,6 +227,8 @@
 		BE5D74D22C8B4B5300054A6A /* Transactions */ = {
 			isa = PBXGroup;
 			children = (
+				BEC2FC9C2C8EF89900CCF8DD /* TransactionsVC.swift */,
+				BEC2FC9D2C8EF89900CCF8DD /* TransactionsVC.xib */,
 			);
 			path = Transactions;
 			sourceTree = "<group>";
@@ -254,7 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				BE96451A2C8B53CA0017201F /* UIColor+Gradient.swift */,
-				BECC04B12C8CDCB20087D59A /* UIViewController+Alert+Toggle.swift */,
+				BECC04B12C8CDCB20087D59A /* UIViewController+Alert+Toggle+SetUpScreen.swift */,
 				BECC04B32C8CDCC70087D59A /* String+Trim.swift */,
 			);
 			path = Extensions;
@@ -273,6 +305,15 @@
 				BE9645182C8B4EDF0017201F /* AppManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		BEC2FCA62C8EFDAF00CCF8DD /* MyCards */ = {
+			isa = PBXGroup;
+			children = (
+				BEC2FCA72C8EFDD700CCF8DD /* MyCardsVC.swift */,
+				BEC2FCA82C8EFDD700CCF8DD /* MyCardsVC.xib */,
+			);
+			path = MyCards;
 			sourceTree = "<group>";
 		};
 		BECC04B52C8CDCC70087D59A /* Helpers */ = {
@@ -382,13 +423,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEEA406D2C8CC063009171BA /* TimeOutVC.xib in Resources */,
+				BEC2FC9B2C8EF86000CCF8DD /* TransferVC.xib in Resources */,
 				BE5B8B952C8DBBF800092BF0 /* ErrorInternetConnection.xib in Resources */,
 				BE5B8B992C8DBC2000092BF0 /* ErrorServer.xib in Resources */,
+				BEC2FC9F2C8EF89900CCF8DD /* TransactionsVC.xib in Resources */,
 				BEEA40672C8CA7F1009171BA /* SignInVC.xib in Resources */,
+				BEC2FC972C8EF7EE00CCF8DD /* HomeVC.xib in Resources */,
+				BEC2FCA32C8EF8F000CCF8DD /* MoreVC.xib in Resources */,
 				BED3C7DA2C8AF664005DA505 /* LaunchScreen.storyboard in Resources */,
 				BE9645162C8B4E1D0017201F /* SignUpBasicInfoVC.xib in Resources */,
 				BED3C7D72C8AF664005DA505 /* Assets.xcassets in Resources */,
 				BE96451F2C8B82250017201F /* SignUpAdditionalInfoVC.xib in Resources */,
+				BEC2FCAA2C8EFDD800CCF8DD /* MyCardsVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,7 +492,11 @@
 				BECC04B42C8CDCC70087D59A /* String+Trim.swift in Sources */,
 				BEEA40692C8CAAAC009171BA /* TextFieldHelper.swift in Sources */,
 				BE03362F2C8CCBDB00445276 /* AuthenticationPresenter.swift in Sources */,
-				BECC04B22C8CDCB20087D59A /* UIViewController+Alert+Toggle.swift in Sources */,
+				BEC2FC962C8EF7EE00CCF8DD /* HomeVC.swift in Sources */,
+				BECC04B22C8CDCB20087D59A /* UIViewController+Alert+Toggle+SetUpScreen.swift in Sources */,
+				BEC2FC9E2C8EF89900CCF8DD /* TransactionsVC.swift in Sources */,
+				BEC2FCA92C8EFDD700CCF8DD /* MyCardsVC.swift in Sources */,
+				BEC2FC9A2C8EF86000CCF8DD /* TransferVC.swift in Sources */,
 				BE5B8B982C8DBC2000092BF0 /* ErrorServer.swift in Sources */,
 				BEEA40662C8CA7F1009171BA /* SignInVC.swift in Sources */,
 				BE9645192C8B4EE00017201F /* AppManager.swift in Sources */,
@@ -456,7 +506,9 @@
 				BEEA406C2C8CC063009171BA /* TimeOutVC.swift in Sources */,
 				BE9645152C8B4E1D0017201F /* SignUpBasicInfoVC.swift in Sources */,
 				BE0336312C8CCC3400445276 /* AuthenticationProtocol.swift in Sources */,
+				BEC2FCA52C8EFB4700CCF8DD /* TabBarController.swift in Sources */,
 				BE5B8B942C8DBBF800092BF0 /* ErrorInternetConnection.swift in Sources */,
+				BEC2FCA22C8EF8F000CCF8DD /* MoreVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

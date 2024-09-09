@@ -35,4 +35,12 @@ extension UIViewController {
             textField.isSecureTextEntry.toggle()
         }
     }
+    
+    func setUpBackground(innerView: UIView?) {
+        UIColor.setupBackgroundColor(for: self.view, topColor: UIColor(hex: "FFF8E7"), bottomColor: UIColor(hex: "FFEAEE"))
+        
+        if let innerView = innerView {
+            UIColor.setupBackgroundColor(for: innerView, topColor:UIColor(hex: "FFF8E7"), bottomColor: UIColor(hex: "FFEAEE"))
+        }
+    }
 }

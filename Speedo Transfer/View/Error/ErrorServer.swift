@@ -24,8 +24,7 @@ class ErrorServer: UIViewController {
     func setupUI() {
         errorImageView.image = UIImage(named: "cuate.png")
         self.navigationController?.isNavigationBarHidden = true
-        UIColor.setupBackgroundColor(for: self.view, topColor: UIColor(hex: "FFF8E7"), bottomColor: UIColor(hex: "FFEAEE"))
-        UIColor.setupBackgroundColor(for: self.innerView, topColor: UIColor(hex: "FFF8E7"), bottomColor: UIColor(hex: "FFEAEE"))
+        self.setUpBackground(innerView: innerView)
         
         messageUsButton.layer.borderColor = UIColor(hex: "521220").cgColor
         messageUsButton.layer.borderWidth = 2.0

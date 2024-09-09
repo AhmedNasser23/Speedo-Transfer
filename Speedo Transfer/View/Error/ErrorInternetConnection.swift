@@ -19,9 +19,7 @@ class ErrorInternetConnection: UIViewController {
         vectorImageView.image = UIImage(named: "Vector.png")
         
         self.navigationController?.isNavigationBarHidden = true
-        UIColor.setupBackgroundColor(for: self.view, topColor: UIColor(hex: "FFF8E7"), bottomColor: UIColor(hex: "FFEAEE"))
-        UIColor.setupBackgroundColor(for: self.innerView, topColor:UIColor(hex: "FFF8E7"), bottomColor: UIColor(hex: "FFEAEE"))
-        
+        self.setUpBackground(innerView: innerView)
     }
 
     // MARK: - Actions
