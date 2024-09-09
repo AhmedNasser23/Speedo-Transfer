@@ -45,6 +45,8 @@
 		BED3C7D52C8AF662005DA505 /* Speedo_Transfer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BED3C7D32C8AF662005DA505 /* Speedo_Transfer.xcdatamodeld */; };
 		BED3C7D72C8AF664005DA505 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BED3C7D62C8AF664005DA505 /* Assets.xcassets */; };
 		BED3C7DA2C8AF664005DA505 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED3C7D82C8AF664005DA505 /* LaunchScreen.storyboard */; };
+		BED556032C8F7E960091476E /* transactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED556012C8F7E960091476E /* transactionCell.swift */; };
+		BED556042C8F7E960091476E /* transactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BED556022C8F7E960091476E /* transactionCell.xib */; };
 		BEEA40662C8CA7F1009171BA /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEA40642C8CA7F0009171BA /* SignInVC.swift */; };
 		BEEA40672C8CA7F1009171BA /* SignInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEEA40652C8CA7F0009171BA /* SignInVC.xib */; };
 		BEEA40692C8CAAAC009171BA /* TextFieldHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEA40682C8CAAAB009171BA /* TextFieldHelper.swift */; };
@@ -107,6 +109,8 @@
 		BED3C7D62C8AF664005DA505 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BED3C7D92C8AF664005DA505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BED3C7DB2C8AF664005DA505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BED556012C8F7E960091476E /* transactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transactionCell.swift; sourceTree = "<group>"; };
+		BED556022C8F7E960091476E /* transactionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = transactionCell.xib; sourceTree = "<group>"; };
 		BEEA40642C8CA7F0009171BA /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		BEEA40652C8CA7F0009171BA /* SignInVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInVC.xib; sourceTree = "<group>"; };
 		BEEA40682C8CAAAB009171BA /* TextFieldHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldHelper.swift; sourceTree = "<group>"; };
@@ -219,6 +223,8 @@
 				BEC2FC952C8EF7EE00CCF8DD /* HomeVC.xib */,
 				BEC2FC982C8EF86000CCF8DD /* TransferVC.swift */,
 				BEC2FC992C8EF86000CCF8DD /* TransferVC.xib */,
+				BED556012C8F7E960091476E /* transactionCell.swift */,
+				BED556022C8F7E960091476E /* transactionCell.xib */,
 			);
 			path = Transfer;
 			sourceTree = "<group>";
@@ -452,6 +458,7 @@
 				BEC2FC9B2C8EF86000CCF8DD /* TransferVC.xib in Resources */,
 				BE5B8B952C8DBBF800092BF0 /* ErrorInternetConnection.xib in Resources */,
 				BE5B8B992C8DBC2000092BF0 /* ErrorServer.xib in Resources */,
+				BED556042C8F7E960091476E /* transactionCell.xib in Resources */,
 				BEC2FC9F2C8EF89900CCF8DD /* TransactionsVC.xib in Resources */,
 				BEEA40672C8CA7F1009171BA /* SignInVC.xib in Resources */,
 				BE590F3B2C8F4D37008387B9 /* ThirdScreenVC.xib in Resources */,
@@ -534,6 +541,7 @@
 				BED3C7D52C8AF662005DA505 /* Speedo_Transfer.xcdatamodeld in Sources */,
 				BE96451E2C8B82250017201F /* SignUpAdditionalInfoVC.swift in Sources */,
 				BED3C7CB2C8AF662005DA505 /* AppDelegate.swift in Sources */,
+				BED556032C8F7E960091476E /* transactionCell.swift in Sources */,
 				BE590F322C8F4CF3008387B9 /* FirstScreenVC.swift in Sources */,
 				BEEA406C2C8CC063009171BA /* TimeOutVC.swift in Sources */,
 				BE9645152C8B4E1D0017201F /* SignUpBasicInfoVC.swift in Sources */,

@@ -10,7 +10,7 @@ import UIKit
 
 struct AppManager {
     static func startApp(window: UIWindow?) {
-        window?.rootViewController = UINavigationController(rootViewController: FirstScreenVC())
+        window?.rootViewController = UINavigationController(rootViewController: TabBarController())
         window?.makeKeyAndVisible()
     }
 }

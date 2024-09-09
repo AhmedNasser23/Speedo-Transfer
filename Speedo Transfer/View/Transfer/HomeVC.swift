@@ -23,8 +23,29 @@ class HomeVC: UIViewController {
         self.setUpBackground(innerView: nil)
         self.balanceInfoImageView.layer.cornerRadius = 10.0
         self.balanceInfoImageView.clipsToBounds = true
-        
-    }
 
+        transactionsTableView.register(UINib(nibName: "transactionCell", bundle: nil), forCellReuseIdentifier: "TransactionCell")
+        transactionsTableView.dataSource = self
+        transactionsTableView.delegate = self
+    }
+}
+
+extension HomeVC: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 8
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TransactionCell", for: indexPath) as! transactionCell
+        
+        cell.configureCell()
+
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
 
 }

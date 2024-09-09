@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="balanceInfoImageView" destination="3Sm-Wd-tGg" id="uR8-lQ-off"/>
                 <outlet property="balanceLabel" destination="045-M4-VL6" id="4tZ-mR-Gl5"/>
+                <outlet property="transactionsTableView" destination="t3o-ir-0lX" id="FhA-fc-0R1"/>
                 <outlet property="userInitialsLabel" destination="da0-em-wgt" id="SoH-ed-oJT"/>
                 <outlet property="userNameLabel" destination="beR-1S-JcA" id="aku-JP-MBD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -87,7 +88,7 @@
                     <color key="textColor" systemColor="systemGray2Color"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="t3o-ir-0lX">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="t3o-ir-0lX">
                     <rect key="frame" x="20" y="319" width="388" height="550"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
