@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondScreenVC" customModule="Speedo_Transfer" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="secondOnBoardingImg" translatesAutoresizingMaskIntoConstraints="NO" id="JXf-hE-gnP">
+                    <rect key="frame" x="42" y="84" width="344" height="303"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="firstFrame" translatesAutoresizingMaskIntoConstraints="NO" id="Eie-QD-baZ">
+                    <rect key="frame" x="181.66666666666666" y="419" width="65" height="16"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRt-SO-UUi">
+                    <rect key="frame" x="142.66666666666666" y="472" width="142.99999999999997" height="29"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2U-Ka-bo1">
+                    <rect key="frame" x="42.666666666666657" y="601" width="343" height="51"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="51" id="CUZ-ZW-BEf"/>
+                        <constraint firstAttribute="width" constant="343" id="Dbp-Pq-Et3"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Next">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                        <color key="baseBackgroundColor" red="0.32156862749999998" green="0.070588235289999995" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="nextBtnTapped:" destination="-1" eventType="touchUpInside" id="cGe-Qn-aaw"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transfer funds instantly to friends and family worldwide, strong shield protecting a money." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hO7-O3-Akz">
+                    <rect key="frame" x="65" y="509" width="343" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="KYN-o1-G99"/>
+                        <constraint firstAttribute="width" constant="343" id="VnG-E2-7rZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Eie-QD-baZ" firstAttribute="top" secondItem="JXf-hE-gnP" secondAttribute="bottom" constant="32" id="5sT-pt-zGE"/>
+                <constraint firstItem="hO7-O3-Akz" firstAttribute="top" secondItem="IRt-SO-UUi" secondAttribute="bottom" constant="8" symbolic="YES" id="78o-EN-RnZ"/>
+                <constraint firstItem="JXf-hE-gnP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="8L0-CZ-GMV"/>
+                <constraint firstItem="IRt-SO-UUi" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="BBW-cE-qzM"/>
+                <constraint firstItem="JXf-hE-gnP" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Gjo-xu-sB5"/>
+                <constraint firstItem="Eie-QD-baZ" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.151869" id="OaF-MK-Oo3"/>
+                <constraint firstItem="X2U-Ka-bo1" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Pmu-1u-nLz"/>
+                <constraint firstItem="JXf-hE-gnP" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.803738" id="UlU-rs-F3S"/>
+                <constraint firstItem="X2U-Ka-bo1" firstAttribute="top" secondItem="hO7-O3-Akz" secondAttribute="bottom" constant="44" id="VNi-kj-xCP"/>
+                <constraint firstItem="Eie-QD-baZ" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Vbf-mJ-WrL"/>
+                <constraint firstItem="IRt-SO-UUi" firstAttribute="top" secondItem="Eie-QD-baZ" secondAttribute="bottom" constant="37" id="XGu-LN-2Xu"/>
+                <constraint firstItem="JXf-hE-gnP" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.327214" id="hdj-Dr-G7N"/>
+                <constraint firstItem="Eie-QD-baZ" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.0172786" id="sJl-k3-amA"/>
+                <constraint firstItem="hO7-O3-Akz" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" constant="22.5" id="wKd-Kt-Riu"/>
+            </constraints>
+            <point key="canvasLocation" x="131.77570093457942" y="112.74298056155509"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="firstFrame" width="65" height="16"/>
+        <image name="secondOnBoardingImg" width="344" height="303"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

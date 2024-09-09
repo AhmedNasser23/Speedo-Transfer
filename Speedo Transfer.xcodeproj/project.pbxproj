@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		BE03362F2C8CCBDB00445276 /* AuthenticationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE03362E2C8CCBDA00445276 /* AuthenticationPresenter.swift */; };
 		BE0336312C8CCC3400445276 /* AuthenticationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0336302C8CCC3300445276 /* AuthenticationProtocol.swift */; };
+		BE590F322C8F4CF3008387B9 /* FirstScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE590F302C8F4CF2008387B9 /* FirstScreenVC.swift */; };
+		BE590F332C8F4CF3008387B9 /* FirstScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE590F312C8F4CF2008387B9 /* FirstScreenVC.xib */; };
+		BE590F362C8F4D18008387B9 /* SecondScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE590F342C8F4D18008387B9 /* SecondScreenVC.swift */; };
+		BE590F372C8F4D18008387B9 /* SecondScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE590F352C8F4D18008387B9 /* SecondScreenVC.xib */; };
+		BE590F3A2C8F4D37008387B9 /* ThirdScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE590F382C8F4D37008387B9 /* ThirdScreenVC.swift */; };
+		BE590F3B2C8F4D37008387B9 /* ThirdScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE590F392C8F4D37008387B9 /* ThirdScreenVC.xib */; };
 		BE5B8B942C8DBBF800092BF0 /* ErrorInternetConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B8B922C8DBBF700092BF0 /* ErrorInternetConnection.swift */; };
 		BE5B8B952C8DBBF800092BF0 /* ErrorInternetConnection.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE5B8B932C8DBBF800092BF0 /* ErrorInternetConnection.xib */; };
 		BE5B8B982C8DBC2000092BF0 /* ErrorServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B8B962C8DBC1F00092BF0 /* ErrorServer.swift */; };
@@ -65,6 +71,12 @@
 		9C3CF58790C7F9AF4DDEA4FC /* Pods-Speedo Transfer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Speedo Transfer.release.xcconfig"; path = "Target Support Files/Pods-Speedo Transfer/Pods-Speedo Transfer.release.xcconfig"; sourceTree = "<group>"; };
 		BE03362E2C8CCBDA00445276 /* AuthenticationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationPresenter.swift; sourceTree = "<group>"; };
 		BE0336302C8CCC3300445276 /* AuthenticationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationProtocol.swift; sourceTree = "<group>"; };
+		BE590F302C8F4CF2008387B9 /* FirstScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenVC.swift; sourceTree = "<group>"; };
+		BE590F312C8F4CF2008387B9 /* FirstScreenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstScreenVC.xib; sourceTree = "<group>"; };
+		BE590F342C8F4D18008387B9 /* SecondScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenVC.swift; sourceTree = "<group>"; };
+		BE590F352C8F4D18008387B9 /* SecondScreenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondScreenVC.xib; sourceTree = "<group>"; };
+		BE590F382C8F4D37008387B9 /* ThirdScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreenVC.swift; sourceTree = "<group>"; };
+		BE590F392C8F4D37008387B9 /* ThirdScreenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdScreenVC.xib; sourceTree = "<group>"; };
 		BE5B8B922C8DBBF700092BF0 /* ErrorInternetConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorInternetConnection.swift; sourceTree = "<group>"; };
 		BE5B8B932C8DBBF800092BF0 /* ErrorInternetConnection.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorInternetConnection.xib; sourceTree = "<group>"; };
 		BE5B8B962C8DBC1F00092BF0 /* ErrorServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorServer.swift; sourceTree = "<group>"; };
@@ -132,6 +144,19 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		BE590F2F2C8F4CC2008387B9 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				BE590F302C8F4CF2008387B9 /* FirstScreenVC.swift */,
+				BE590F312C8F4CF2008387B9 /* FirstScreenVC.xib */,
+				BE590F342C8F4D18008387B9 /* SecondScreenVC.swift */,
+				BE590F352C8F4D18008387B9 /* SecondScreenVC.xib */,
+				BE590F382C8F4D37008387B9 /* ThirdScreenVC.swift */,
+				BE590F392C8F4D37008387B9 /* ThirdScreenVC.xib */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
 		BE5D74C62C8B44B000054A6A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +175,7 @@
 		BE5D74CB2C8B44B000054A6A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BE590F2F2C8F4CC2008387B9 /* OnBoarding */,
 				BEC2FCA62C8EFDAF00CCF8DD /* MyCards */,
 				BE5D74CD2C8B44B000054A6A /* Authentication */,
 				BE5D74D12C8B4B4800054A6A /* Error */,
@@ -428,13 +454,16 @@
 				BE5B8B992C8DBC2000092BF0 /* ErrorServer.xib in Resources */,
 				BEC2FC9F2C8EF89900CCF8DD /* TransactionsVC.xib in Resources */,
 				BEEA40672C8CA7F1009171BA /* SignInVC.xib in Resources */,
+				BE590F3B2C8F4D37008387B9 /* ThirdScreenVC.xib in Resources */,
 				BEC2FC972C8EF7EE00CCF8DD /* HomeVC.xib in Resources */,
 				BEC2FCA32C8EF8F000CCF8DD /* MoreVC.xib in Resources */,
 				BED3C7DA2C8AF664005DA505 /* LaunchScreen.storyboard in Resources */,
 				BE9645162C8B4E1D0017201F /* SignUpBasicInfoVC.xib in Resources */,
 				BED3C7D72C8AF664005DA505 /* Assets.xcassets in Resources */,
+				BE590F332C8F4CF3008387B9 /* FirstScreenVC.xib in Resources */,
 				BE96451F2C8B82250017201F /* SignUpAdditionalInfoVC.xib in Resources */,
 				BEC2FCAA2C8EFDD800CCF8DD /* MyCardsVC.xib in Resources */,
+				BE590F372C8F4D18008387B9 /* SecondScreenVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,7 +520,9 @@
 				BE96451B2C8B53CA0017201F /* UIColor+Gradient.swift in Sources */,
 				BECC04B42C8CDCC70087D59A /* String+Trim.swift in Sources */,
 				BEEA40692C8CAAAC009171BA /* TextFieldHelper.swift in Sources */,
+				BE590F362C8F4D18008387B9 /* SecondScreenVC.swift in Sources */,
 				BE03362F2C8CCBDB00445276 /* AuthenticationPresenter.swift in Sources */,
+				BE590F3A2C8F4D37008387B9 /* ThirdScreenVC.swift in Sources */,
 				BEC2FC962C8EF7EE00CCF8DD /* HomeVC.swift in Sources */,
 				BECC04B22C8CDCB20087D59A /* UIViewController+Alert+Toggle+SetUpScreen.swift in Sources */,
 				BEC2FC9E2C8EF89900CCF8DD /* TransactionsVC.swift in Sources */,
@@ -503,6 +534,7 @@
 				BED3C7D52C8AF662005DA505 /* Speedo_Transfer.xcdatamodeld in Sources */,
 				BE96451E2C8B82250017201F /* SignUpAdditionalInfoVC.swift in Sources */,
 				BED3C7CB2C8AF662005DA505 /* AppDelegate.swift in Sources */,
+				BE590F322C8F4CF3008387B9 /* FirstScreenVC.swift in Sources */,
 				BEEA406C2C8CC063009171BA /* TimeOutVC.swift in Sources */,
 				BE9645152C8B4E1D0017201F /* SignUpBasicInfoVC.swift in Sources */,
 				BE0336312C8CCC3400445276 /* AuthenticationProtocol.swift in Sources */,

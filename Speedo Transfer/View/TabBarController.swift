@@ -5,6 +5,7 @@
 //  Created by Ahmed Nasser on 09/09/2024.
 //
 
+
 import UIKit
 
 class TabBarController: UITabBarController {
@@ -13,8 +14,7 @@ class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupTabs()
-        self.tabBar.tintColor = UIColor(hex: "871E35")
-        
+        configureTabBarAppearance()
     }
     
     // MARK: - Tab Setup
@@ -28,7 +28,22 @@ class TabBarController: UITabBarController {
         self.setViewControllers([home, transfer, transactions, myCards, more], animated: true)
     }
     
-    private func createNav(title: String, image: UIImage?, vc: UIViewController ) -> UINavigationController {
+    // MARK: - Tab Bar Appearance Configuration
+    private func configureTabBarAppearance() {
+        let appearance = UITabBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = .white
+        
+        self.tabBar.standardAppearance = appearance
+        
+        if #available(iOS 15.0, *) {
+            self.tabBar.scrollEdgeAppearance = appearance
+        }
+        
+        self.tabBar.tintColor = UIColor(hex: "871E35")
+    }
+    
+    private func createNav(title: String, image: UIImage?, vc: UIViewController) -> UINavigationController {
         let nav = UINavigationController(rootViewController: vc)
         nav.tabBarItem.title = title
         nav.tabBarItem.image = image

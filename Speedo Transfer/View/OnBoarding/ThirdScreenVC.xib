@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThirdScreenVC" customModule="Speedo_Transfer" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="thirdOnBoardingImg" translatesAutoresizingMaskIntoConstraints="NO" id="1bh-30-TEg">
+                    <rect key="frame" x="42" y="84" width="344" height="297"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGL-Et-j3z">
+                    <rect key="frame" x="166" y="472" width="96" height="29"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H53-SO-wqf">
+                    <rect key="frame" x="42.666666666666657" y="601" width="343" height="51"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="51" id="Uzz-Yh-hIg"/>
+                        <constraint firstAttribute="width" constant="343" id="olr-cQ-Inr"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Next">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                        <color key="baseBackgroundColor" red="0.32156862749999998" green="0.070588235289999995" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="nextBtnTapped:" destination="-1" eventType="touchUpInside" id="dHb-Hc-tKt"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="secondFrame" translatesAutoresizingMaskIntoConstraints="NO" id="6do-RV-tle">
+                    <rect key="frame" x="181.66666666666666" y="419" width="65" height="16"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enjoy peace of mind with our secure platform Transfer funds instantly to friends." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9f-9r-Gxa">
+                    <rect key="frame" x="54" y="519" width="343" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="RcO-ZL-Cng"/>
+                        <constraint firstAttribute="width" constant="343" id="zEy-7s-9Sk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="1bh-30-TEg" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="2Ps-gH-8jm"/>
+                <constraint firstItem="1bh-30-TEg" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.320734" id="4jl-Zb-iPK"/>
+                <constraint firstItem="hGL-Et-j3z" firstAttribute="top" secondItem="6do-RV-tle" secondAttribute="bottom" constant="37" id="6Bq-KB-LYs"/>
+                <constraint firstItem="hGL-Et-j3z" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="6xA-Ma-nUs"/>
+                <constraint firstItem="6do-RV-tle" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="7ew-qX-7du"/>
+                <constraint firstItem="6do-RV-tle" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.151869" id="Ig9-eo-0RS"/>
+                <constraint firstItem="1bh-30-TEg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="JDO-Fb-xEo"/>
+                <constraint firstItem="H53-SO-wqf" firstAttribute="top" secondItem="T9f-9r-Gxa" secondAttribute="bottom" constant="34" id="KUJ-vU-UKB"/>
+                <constraint firstItem="H53-SO-wqf" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="SS3-Hy-Aur"/>
+                <constraint firstItem="6do-RV-tle" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.0172786" id="SU8-LC-vnh"/>
+                <constraint firstItem="T9f-9r-Gxa" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" constant="11.5" id="Uks-7x-ThK"/>
+                <constraint firstItem="1bh-30-TEg" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.803738" id="ZDH-nW-L7x"/>
+                <constraint firstItem="T9f-9r-Gxa" firstAttribute="top" secondItem="hGL-Et-j3z" secondAttribute="bottom" constant="18" id="aF2-jY-AAi"/>
+                <constraint firstItem="6do-RV-tle" firstAttribute="top" secondItem="1bh-30-TEg" secondAttribute="bottom" constant="38" id="dbe-C9-gAk"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="113"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="secondFrame" width="65" height="16"/>
+        <image name="thirdOnBoardingImg" width="344" height="297"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
