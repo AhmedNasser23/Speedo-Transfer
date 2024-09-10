@@ -36,6 +36,7 @@ class TransferAmountVC: UIViewController {
     
     
     @IBAction func favoriteBtnTapped(_ sender: UIButton) {
+        
     }
     
 }
