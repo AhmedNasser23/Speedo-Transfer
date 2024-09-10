@@ -9,19 +9,18 @@ import UIKit
 
 class transactionCell: UITableViewCell {
 
+    // MARK: - Outlets
     @IBOutlet weak var recipientNameLabel: UILabel!
     @IBOutlet weak var transactionDateLabel: UILabel!
     @IBOutlet weak var transactionAmountLabel: UILabel!
     
+    // MARK: - Methods
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
     func configureCell() {

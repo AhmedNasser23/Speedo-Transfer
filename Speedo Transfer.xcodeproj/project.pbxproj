@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		BE03362F2C8CCBDB00445276 /* AuthenticationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE03362E2C8CCBDA00445276 /* AuthenticationPresenter.swift */; };
 		BE0336312C8CCC3400445276 /* AuthenticationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0336302C8CCC3300445276 /* AuthenticationProtocol.swift */; };
+		BE1392C52C9061450092CE4C /* TransferConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1392C32C9061440092CE4C /* TransferConfirmationVC.swift */; };
+		BE1392C62C9061450092CE4C /* TransferConfirmationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE1392C42C9061440092CE4C /* TransferConfirmationVC.xib */; };
+		BE1392C92C90848A0092CE4C /* TransferCompletionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1392C72C90848A0092CE4C /* TransferCompletionVC.swift */; };
+		BE1392CA2C90848A0092CE4C /* TransferCompletionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE1392C82C90848A0092CE4C /* TransferCompletionVC.xib */; };
 		BE590F322C8F4CF3008387B9 /* FirstScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE590F302C8F4CF2008387B9 /* FirstScreenVC.swift */; };
 		BE590F332C8F4CF3008387B9 /* FirstScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE590F312C8F4CF2008387B9 /* FirstScreenVC.xib */; };
 		BE590F362C8F4D18008387B9 /* SecondScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE590F342C8F4D18008387B9 /* SecondScreenVC.swift */; };
@@ -30,8 +34,8 @@
 		BE96451F2C8B82250017201F /* SignUpAdditionalInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE96451D2C8B82250017201F /* SignUpAdditionalInfoVC.xib */; };
 		BEC2FC962C8EF7EE00CCF8DD /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC2FC942C8EF7EE00CCF8DD /* HomeVC.swift */; };
 		BEC2FC972C8EF7EE00CCF8DD /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEC2FC952C8EF7EE00CCF8DD /* HomeVC.xib */; };
-		BEC2FC9A2C8EF86000CCF8DD /* TransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC2FC982C8EF86000CCF8DD /* TransferVC.swift */; };
-		BEC2FC9B2C8EF86000CCF8DD /* TransferVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEC2FC992C8EF86000CCF8DD /* TransferVC.xib */; };
+		BEC2FC9A2C8EF86000CCF8DD /* TransferAmountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC2FC982C8EF86000CCF8DD /* TransferAmountVC.swift */; };
+		BEC2FC9B2C8EF86000CCF8DD /* TransferAmountVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEC2FC992C8EF86000CCF8DD /* TransferAmountVC.xib */; };
 		BEC2FC9E2C8EF89900CCF8DD /* TransactionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC2FC9C2C8EF89900CCF8DD /* TransactionsVC.swift */; };
 		BEC2FC9F2C8EF89900CCF8DD /* TransactionsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEC2FC9D2C8EF89900CCF8DD /* TransactionsVC.xib */; };
 		BEC2FCA22C8EF8F000CCF8DD /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC2FCA02C8EF8EF00CCF8DD /* MoreVC.swift */; };
@@ -73,6 +77,10 @@
 		9C3CF58790C7F9AF4DDEA4FC /* Pods-Speedo Transfer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Speedo Transfer.release.xcconfig"; path = "Target Support Files/Pods-Speedo Transfer/Pods-Speedo Transfer.release.xcconfig"; sourceTree = "<group>"; };
 		BE03362E2C8CCBDA00445276 /* AuthenticationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationPresenter.swift; sourceTree = "<group>"; };
 		BE0336302C8CCC3300445276 /* AuthenticationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationProtocol.swift; sourceTree = "<group>"; };
+		BE1392C32C9061440092CE4C /* TransferConfirmationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferConfirmationVC.swift; sourceTree = "<group>"; };
+		BE1392C42C9061440092CE4C /* TransferConfirmationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferConfirmationVC.xib; sourceTree = "<group>"; };
+		BE1392C72C90848A0092CE4C /* TransferCompletionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferCompletionVC.swift; sourceTree = "<group>"; };
+		BE1392C82C90848A0092CE4C /* TransferCompletionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferCompletionVC.xib; sourceTree = "<group>"; };
 		BE590F302C8F4CF2008387B9 /* FirstScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenVC.swift; sourceTree = "<group>"; };
 		BE590F312C8F4CF2008387B9 /* FirstScreenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstScreenVC.xib; sourceTree = "<group>"; };
 		BE590F342C8F4D18008387B9 /* SecondScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenVC.swift; sourceTree = "<group>"; };
@@ -92,8 +100,8 @@
 		BE96451D2C8B82250017201F /* SignUpAdditionalInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpAdditionalInfoVC.xib; sourceTree = "<group>"; };
 		BEC2FC942C8EF7EE00CCF8DD /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		BEC2FC952C8EF7EE00CCF8DD /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
-		BEC2FC982C8EF86000CCF8DD /* TransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferVC.swift; sourceTree = "<group>"; };
-		BEC2FC992C8EF86000CCF8DD /* TransferVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferVC.xib; sourceTree = "<group>"; };
+		BEC2FC982C8EF86000CCF8DD /* TransferAmountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferAmountVC.swift; sourceTree = "<group>"; };
+		BEC2FC992C8EF86000CCF8DD /* TransferAmountVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferAmountVC.xib; sourceTree = "<group>"; };
 		BEC2FC9C2C8EF89900CCF8DD /* TransactionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsVC.swift; sourceTree = "<group>"; };
 		BEC2FC9D2C8EF89900CCF8DD /* TransactionsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionsVC.xib; sourceTree = "<group>"; };
 		BEC2FCA02C8EF8EF00CCF8DD /* MoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
@@ -221,10 +229,14 @@
 			children = (
 				BEC2FC942C8EF7EE00CCF8DD /* HomeVC.swift */,
 				BEC2FC952C8EF7EE00CCF8DD /* HomeVC.xib */,
-				BEC2FC982C8EF86000CCF8DD /* TransferVC.swift */,
-				BEC2FC992C8EF86000CCF8DD /* TransferVC.xib */,
+				BEC2FC982C8EF86000CCF8DD /* TransferAmountVC.swift */,
+				BEC2FC992C8EF86000CCF8DD /* TransferAmountVC.xib */,
 				BED556012C8F7E960091476E /* transactionCell.swift */,
 				BED556022C8F7E960091476E /* transactionCell.xib */,
+				BE1392C32C9061440092CE4C /* TransferConfirmationVC.swift */,
+				BE1392C42C9061440092CE4C /* TransferConfirmationVC.xib */,
+				BE1392C72C90848A0092CE4C /* TransferCompletionVC.swift */,
+				BE1392C82C90848A0092CE4C /* TransferCompletionVC.xib */,
 			);
 			path = Transfer;
 			sourceTree = "<group>";
@@ -455,7 +467,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEEA406D2C8CC063009171BA /* TimeOutVC.xib in Resources */,
-				BEC2FC9B2C8EF86000CCF8DD /* TransferVC.xib in Resources */,
+				BEC2FC9B2C8EF86000CCF8DD /* TransferAmountVC.xib in Resources */,
+				BE1392CA2C90848A0092CE4C /* TransferCompletionVC.xib in Resources */,
 				BE5B8B952C8DBBF800092BF0 /* ErrorInternetConnection.xib in Resources */,
 				BE5B8B992C8DBC2000092BF0 /* ErrorServer.xib in Resources */,
 				BED556042C8F7E960091476E /* transactionCell.xib in Resources */,
@@ -470,6 +483,7 @@
 				BE590F332C8F4CF3008387B9 /* FirstScreenVC.xib in Resources */,
 				BE96451F2C8B82250017201F /* SignUpAdditionalInfoVC.xib in Resources */,
 				BEC2FCAA2C8EFDD800CCF8DD /* MyCardsVC.xib in Resources */,
+				BE1392C62C9061450092CE4C /* TransferConfirmationVC.xib in Resources */,
 				BE590F372C8F4D18008387B9 /* SecondScreenVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -534,7 +548,9 @@
 				BECC04B22C8CDCB20087D59A /* UIViewController+Alert+Toggle+SetUpScreen.swift in Sources */,
 				BEC2FC9E2C8EF89900CCF8DD /* TransactionsVC.swift in Sources */,
 				BEC2FCA92C8EFDD700CCF8DD /* MyCardsVC.swift in Sources */,
-				BEC2FC9A2C8EF86000CCF8DD /* TransferVC.swift in Sources */,
+				BEC2FC9A2C8EF86000CCF8DD /* TransferAmountVC.swift in Sources */,
+				BE1392C52C9061450092CE4C /* TransferConfirmationVC.swift in Sources */,
+				BE1392C92C90848A0092CE4C /* TransferCompletionVC.swift in Sources */,
 				BE5B8B982C8DBC2000092BF0 /* ErrorServer.swift in Sources */,
 				BEEA40662C8CA7F1009171BA /* SignInVC.swift in Sources */,
 				BE9645192C8B4EE00017201F /* AppManager.swift in Sources */,

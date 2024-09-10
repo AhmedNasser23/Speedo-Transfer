@@ -20,7 +20,7 @@ class TabBarController: UITabBarController {
     // MARK: - Tab Setup
     private func setupTabs() {
         let home = self.createNav(title: "Home", image: UIImage(named: "Home.png"), vc: HomeVC())
-        let transfer = self.createNav(title: "Transfer", image: UIImage(named: "Transfer.png"), vc: TransferVC())
+        let transfer = self.createNav(title: "Transfer", image: UIImage(named: "Transfer.png"), vc: TransferAmountVC())
         let transactions = self.createNav(title: "Transactions", image: UIImage(named: "Transactions.png"), vc: TransactionsVC())
         let myCards = self.createNav(title: "My Cards", image: UIImage(named: "Cards.png"), vc: MyCardsVC())
         let more = self.createNav(title: "More", image: UIImage(named: "More.png"), vc: MoreVC())
@@ -47,7 +47,7 @@ class TabBarController: UITabBarController {
         let nav = UINavigationController(rootViewController: vc)
         nav.tabBarItem.title = title
         nav.tabBarItem.image = image
-        nav.viewControllers.first?.navigationItem.title = title + " Controller"
+        nav.viewControllers.first?.navigationItem.title = title
         
         return nav
     }
