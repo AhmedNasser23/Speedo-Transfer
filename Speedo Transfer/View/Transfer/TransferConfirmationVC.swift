@@ -36,7 +36,6 @@ class TransferConfirmationVC: UIViewController {
         self.navigationController?.pushViewController(TransferCompletionVC(), animated: true)
     }
     
-
     @IBAction func previousBtnTapped(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
