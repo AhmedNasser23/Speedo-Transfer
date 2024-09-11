@@ -19,11 +19,20 @@ class HomeVC: UIViewController {
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.setUpUI()
+        self.setUpTableView()
+    }
+    
+    // MARK: - Private Methods
+    private func setUpUI() {
         self.navigationController?.isNavigationBarHidden = true
         self.setUpBackground(innerView: nil)
         self.balanceInfoImageView.layer.cornerRadius = 10.0
         self.balanceInfoImageView.clipsToBounds = true
-
+    }
+    
+    private func setUpTableView() {
         transactionsTableView.register(UINib(nibName: "transactionCell", bundle: nil), forCellReuseIdentifier: "TransactionCell")
         transactionsTableView.dataSource = self
         transactionsTableView.delegate = self

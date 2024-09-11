@@ -10,7 +10,7 @@ import UIKit
 
 struct AppManager {
     static func startApp(window: UIWindow?) {
-        window?.rootViewController = UINavigationController(rootViewController: TransferAmountVC())
+        window?.rootViewController = UINavigationController(rootViewController: SignUpAdditionalInfoVC())
         window?.makeKeyAndVisible()
     }
 }

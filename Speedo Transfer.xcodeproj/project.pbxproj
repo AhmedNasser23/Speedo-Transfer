@@ -56,6 +56,12 @@
 		BEEA40692C8CAAAC009171BA /* TextFieldHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEA40682C8CAAAB009171BA /* TextFieldHelper.swift */; };
 		BEEA406C2C8CC063009171BA /* TimeOutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEA406A2C8CC063009171BA /* TimeOutVC.swift */; };
 		BEEA406D2C8CC063009171BA /* TimeOutVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEEA406B2C8CC063009171BA /* TimeOutVC.xib */; };
+		BEF1B63F2C919BC9006BA2B6 /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF1B63E2C919BC8006BA2B6 /* FavoritesListVC.swift */; };
+		BEF1B6422C919D4A006BA2B6 /* FavoriteRecipientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF1B6402C919D4A006BA2B6 /* FavoriteRecipientCell.swift */; };
+		BEF1B6432C919D4A006BA2B6 /* FavoriteRecipientCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEF1B6412C919D4A006BA2B6 /* FavoriteRecipientCell.xib */; };
+		BEF1B6452C91CB18006BA2B6 /* CountriesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF1B6442C91CB18006BA2B6 /* CountriesListVC.swift */; };
+		BEF1B6482C91D223006BA2B6 /* CounteryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF1B6462C91D223006BA2B6 /* CounteryCell.swift */; };
+		BEF1B6492C91D223006BA2B6 /* CounteryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEF1B6472C91D223006BA2B6 /* CounteryCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -124,6 +130,12 @@
 		BEEA40682C8CAAAB009171BA /* TextFieldHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldHelper.swift; sourceTree = "<group>"; };
 		BEEA406A2C8CC063009171BA /* TimeOutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOutVC.swift; sourceTree = "<group>"; };
 		BEEA406B2C8CC063009171BA /* TimeOutVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeOutVC.xib; sourceTree = "<group>"; };
+		BEF1B63E2C919BC8006BA2B6 /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
+		BEF1B6402C919D4A006BA2B6 /* FavoriteRecipientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRecipientCell.swift; sourceTree = "<group>"; };
+		BEF1B6412C919D4A006BA2B6 /* FavoriteRecipientCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteRecipientCell.xib; sourceTree = "<group>"; };
+		BEF1B6442C91CB18006BA2B6 /* CountriesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListVC.swift; sourceTree = "<group>"; };
+		BEF1B6462C91D223006BA2B6 /* CounteryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounteryCell.swift; sourceTree = "<group>"; };
+		BEF1B6472C91D223006BA2B6 /* CounteryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CounteryCell.xib; sourceTree = "<group>"; };
 		CA466222A5BEEEA82A35D197 /* Pods_Speedo_Transfer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Speedo_Transfer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -220,6 +232,9 @@
 				BEEA40652C8CA7F0009171BA /* SignInVC.xib */,
 				BEEA406A2C8CC063009171BA /* TimeOutVC.swift */,
 				BEEA406B2C8CC063009171BA /* TimeOutVC.xib */,
+				BEF1B6442C91CB18006BA2B6 /* CountriesListVC.swift */,
+				BEF1B6462C91D223006BA2B6 /* CounteryCell.swift */,
+				BEF1B6472C91D223006BA2B6 /* CounteryCell.xib */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -237,6 +252,9 @@
 				BE1392C42C9061440092CE4C /* TransferConfirmationVC.xib */,
 				BE1392C72C90848A0092CE4C /* TransferCompletionVC.swift */,
 				BE1392C82C90848A0092CE4C /* TransferCompletionVC.xib */,
+				BEF1B63E2C919BC8006BA2B6 /* FavoritesListVC.swift */,
+				BEF1B6402C919D4A006BA2B6 /* FavoriteRecipientCell.swift */,
+				BEF1B6412C919D4A006BA2B6 /* FavoriteRecipientCell.xib */,
 			);
 			path = Transfer;
 			sourceTree = "<group>";
@@ -471,7 +489,9 @@
 				BE1392CA2C90848A0092CE4C /* TransferCompletionVC.xib in Resources */,
 				BE5B8B952C8DBBF800092BF0 /* ErrorInternetConnection.xib in Resources */,
 				BE5B8B992C8DBC2000092BF0 /* ErrorServer.xib in Resources */,
+				BEF1B6432C919D4A006BA2B6 /* FavoriteRecipientCell.xib in Resources */,
 				BED556042C8F7E960091476E /* transactionCell.xib in Resources */,
+				BEF1B6492C91D223006BA2B6 /* CounteryCell.xib in Resources */,
 				BEC2FC9F2C8EF89900CCF8DD /* TransactionsVC.xib in Resources */,
 				BEEA40672C8CA7F1009171BA /* SignInVC.xib in Resources */,
 				BE590F3B2C8F4D37008387B9 /* ThirdScreenVC.xib in Resources */,
@@ -538,6 +558,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE9645102C8B4D3F0017201F /* APIManager.swift in Sources */,
+				BEF1B6482C91D223006BA2B6 /* CounteryCell.swift in Sources */,
 				BE96451B2C8B53CA0017201F /* UIColor+Gradient.swift in Sources */,
 				BECC04B42C8CDCC70087D59A /* String+Trim.swift in Sources */,
 				BEEA40692C8CAAAC009171BA /* TextFieldHelper.swift in Sources */,
@@ -563,8 +584,11 @@
 				BE9645152C8B4E1D0017201F /* SignUpBasicInfoVC.swift in Sources */,
 				BE0336312C8CCC3400445276 /* AuthenticationProtocol.swift in Sources */,
 				BEC2FCA52C8EFB4700CCF8DD /* TabBarController.swift in Sources */,
+				BEF1B63F2C919BC9006BA2B6 /* FavoritesListVC.swift in Sources */,
 				BE5B8B942C8DBBF800092BF0 /* ErrorInternetConnection.swift in Sources */,
 				BEC2FCA22C8EF8F000CCF8DD /* MoreVC.swift in Sources */,
+				BEF1B6422C919D4A006BA2B6 /* FavoriteRecipientCell.swift in Sources */,
+				BEF1B6452C91CB18006BA2B6 /* CountriesListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -711,6 +735,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -739,6 +764,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
