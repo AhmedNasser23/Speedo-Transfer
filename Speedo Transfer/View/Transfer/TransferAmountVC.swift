@@ -38,21 +38,21 @@ class TransferAmountVC: UIViewController {
     }
     
     @IBAction func favoriteBtnTapped(_ sender: UIButton) {
-        let favoritesListVC = FavoritesListVC()
-        favoritesListVC.modalPresentationStyle = .pageSheet
-        favoritesListVC.delegate = self
-
-        if let sheet = favoritesListVC.sheetPresentationController {
+        let favoriteTableView = FavoriteTableView()
+        favoriteTableView.delegate = self
+        
+        if let sheet = favoriteTableView.sheetPresentationController {
             sheet.detents = [.medium(), .large()]
             sheet.prefersGrabberVisible = true
-            sheet.prefersEdgeAttachedInCompactHeight = true
+            favoriteTableView.view.layer.cornerRadius = 20
+            sheet.preferredCornerRadius = 20
         }
-
-        present(favoritesListVC, animated: true, completion: nil)
+        
+        present(favoriteTableView, animated: true, completion: nil)
     }
 }
 
-extension TransferAmountVC: FavoritesListDelegate {
+extension TransferAmountVC: FavoriteSelectionDelegate {
     func didSelectFavoriteRecipient(name: String, account: String) {
         recipientNameTextField.text = name
         recipientAccountTextField.text = account

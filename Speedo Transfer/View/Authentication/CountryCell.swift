@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CounteryCell: UITableViewCell {
+class CountryCell: UITableViewCell {
 
     // MARK: - Outlets
     @IBOutlet weak var flagImageView: UIImageView!

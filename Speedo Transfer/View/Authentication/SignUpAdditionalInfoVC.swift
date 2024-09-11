@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SignUpAdditionalInfoVC: UIViewController {
+class SignUpAdditionalInfoVC: UIViewController, UITextFieldDelegate {
 
     // MARK: - Outlets
     @IBOutlet weak var innerView: UIView!
@@ -57,10 +57,25 @@ class SignUpAdditionalInfoVC: UIViewController {
         let arrowImageView = UIImageView(image: UIImage(systemName: "chevron.down"))
         arrowImageView.tintColor = .gray
         arrowImageView.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
+        countryTextField.delegate = self
         countryTextField.rightView = arrowImageView
         countryTextField.rightViewMode = .always
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        textField.resignFirstResponder()
         
-        countryTextField.addTarget(self, action: #selector(showCountriesList), for: .editingDidBegin)
+        let countryVC = CountryTableView()
+        countryVC.delegate = self
+        
+        if let sheet = countryVC.sheetPresentationController {
+            sheet.detents = [.medium(), .large()]
+            sheet.prefersGrabberVisible = true
+            countryVC.view.layer.cornerRadius = 20
+            sheet.preferredCornerRadius = 20
+        }
+        
+        present(countryVC, animated: true, completion: nil)
     }
 
     private func setupDatePicker() {
@@ -80,12 +95,6 @@ class SignUpAdditionalInfoVC: UIViewController {
         dateOfBirthTextField.rightViewMode = .always
     }
 
-    @objc private func showCountriesList() {
-        let countriesVC = CountriesListVC()
-        countriesVC.delegate = self
-        present(countriesVC, animated: true, completion: nil)
-    }
-
     @objc private func handleDateSelection() {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
@@ -94,9 +103,9 @@ class SignUpAdditionalInfoVC: UIViewController {
 }
 
 // MARK: - CountriesListDelegate
-extension SignUpAdditionalInfoVC: CounteryListDelegate {
-    func didSelectCountry(name: String) {
-        countryTextField.text = name
+extension SignUpAdditionalInfoVC: CountrySelectionDelegate {
+    func didSelectCountry(_ country: String) {
+        countryTextField.text = country
     }
 }
 
