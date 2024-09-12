@@ -37,8 +37,8 @@ class AuthenticationPresenter {
             return false
         }
 
-        if password.count < 6 {
-            self.view.showMessage(title: "Sorry", message: "Password must be at least 6 characters long")
+        if password.count < 8 {
+            self.view.showMessage(title: "Sorry", message: "Password must be at least 8 characters long")
             return false
         }
 

@@ -62,6 +62,7 @@
 		BEF1B6492C91D223006BA2B6 /* CountryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEF1B6472C91D223006BA2B6 /* CountryCell.xib */; };
 		BEF1B64B2C9229BF006BA2B6 /* CountryTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF1B64A2C9229BF006BA2B6 /* CountryTableView.swift */; };
 		BEF1B64D2C922E6E006BA2B6 /* FavoriteTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF1B64C2C922E6D006BA2B6 /* FavoriteTableView.swift */; };
+		BEF1B64F2C92370A006BA2B6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF1B64E2C92370A006BA2B6 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -136,6 +137,7 @@
 		BEF1B6472C91D223006BA2B6 /* CountryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryCell.xib; sourceTree = "<group>"; };
 		BEF1B64A2C9229BF006BA2B6 /* CountryTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableView.swift; sourceTree = "<group>"; };
 		BEF1B64C2C922E6D006BA2B6 /* FavoriteTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableView.swift; sourceTree = "<group>"; };
+		BEF1B64E2C92370A006BA2B6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CA466222A5BEEEA82A35D197 /* Pods_Speedo_Transfer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Speedo_Transfer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -192,6 +194,7 @@
 		BE5D74CA2C8B44B000054A6A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BEF1B64E2C92370A006BA2B6 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -589,6 +592,7 @@
 				BE5B8B942C8DBBF800092BF0 /* ErrorInternetConnection.swift in Sources */,
 				BEC2FCA22C8EF8F000CCF8DD /* MoreVC.swift in Sources */,
 				BEF1B6422C919D4A006BA2B6 /* FavoriteRecipientCell.swift in Sources */,
+				BEF1B64F2C92370A006BA2B6 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
