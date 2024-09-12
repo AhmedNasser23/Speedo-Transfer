@@ -13,11 +13,11 @@ protocol AuthenticationProtocol: AnyObject {
 }
 
 @objc protocol SignUpPresenterProtocol {
-    @objc optional func tryRegister(name: String?, email: String?, password: String?, confirmedPassword: String?)
+    @objc optional func tryRegister(name: String, email: String, password: String, confirmedPassword: String)
     
-    @objc optional func tryRegister(country: String?, dateOfBirth: String?)
+    @objc optional func tryRegister(country: String, dateOfBirth: String)
 }
 
 protocol LoginPresenterProtocol {
-    func tryLogin(email: String?, password: String?)
+    func tryLogin(email: String, password: String)
 }

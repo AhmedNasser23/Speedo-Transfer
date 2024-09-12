@@ -24,33 +24,39 @@ class SignUpBasicInfoVC: UIViewController {
         super.viewDidLoad()
         
         presenter = AuthenticationPresenter(view: self)
+        UserDefaultsManager.shared().isOpendBefore = true
         
         self.setUpScreen()
     }
     
     // MARK: - Actions
     @IBAction func signUpBtnTapped(_ sender: UIButton) {
-//        self.presenter.tryRegister?(name: fullNameTextField.text, email: emailTextField.text, password: passwordTextField.text, confirmedPassword: confirmedPasswordTextField.text)
+        self.presenter.tryRegister!(name: fullNameTextField.text ?? "", email: emailTextField.text ?? "", password: passwordTextField.text ?? "", confirmedPassword: confirmedPasswordTextField.text ?? "")
         
-        let user = UserSendedData(
-            name: "Ahmed Gad",
-            email: "A1234567891011121314202015.gd@gmail.com",
-            password: "Ahmed@1234",
-            dateOfBirth: "2004-09-11",
-            country: "Egypt",
-            phoneNumber: "01120238010"
-        )
-
-        APIManager.register(user: user) { result in
-            switch result {
-            case .success(let userRecivedData):
-                print("Sucesss")
-                print("Registration successful: \(userRecivedData)")
-            case .failure(let error):
-                print("Fail")
-                print("Registration failed with error: \(error.localizedDescription)")
-            }
-        }
+//        let user = UserRequest(
+//            name: "Nasser Hemdan",
+//            email: "nasserhemdan771@gmail.com",
+//            password: "N@$$erHemdan",
+//            country: "Egypt",
+//            dateOfBirth: "2004-09-08"
+//        )
+//
+//        APIManager.shared.registerUser(user: user) { result in
+//            switch result {
+//            case .success(let userResponse):
+//                print("User ID: \(userResponse.id)")
+//                for account in userResponse.accounts {
+//                    print("Account Number: \(account.accountNumber)")
+//                    print("Balance: \(account.balance)")
+//                    print("Currency: \(account.currency)")
+//                    print("Account Name: \(account.accountName)")
+//                    print("----------------------")
+//                }
+//            case .failure(let error):
+//                print("Error: \(error)")
+//                self.showAlert(title: "Sorry", message: "This email Already Exist")
+//            }
+//        }
     }
     
     @IBAction func signInBtnTapped(_ sender: UIButton) {

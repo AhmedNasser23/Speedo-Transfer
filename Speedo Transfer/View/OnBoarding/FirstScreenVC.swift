@@ -13,6 +13,7 @@ class FirstScreenVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUpScreen()
+        UserDefaultsManager.shared().isOpendBefore = true
     }
     
     // MARK: - Actions

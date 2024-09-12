@@ -32,6 +32,7 @@
 		BE96451B2C8B53CA0017201F /* UIColor+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE96451A2C8B53CA0017201F /* UIColor+Gradient.swift */; };
 		BE96451E2C8B82250017201F /* SignUpAdditionalInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE96451C2C8B82250017201F /* SignUpAdditionalInfoVC.swift */; };
 		BE96451F2C8B82250017201F /* SignUpAdditionalInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE96451D2C8B82250017201F /* SignUpAdditionalInfoVC.xib */; };
+		BEABB90F2C92BE6F00F960B7 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABB90E2C92BE6E00F960B7 /* UserDefaultsManager.swift */; };
 		BEC2FC962C8EF7EE00CCF8DD /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC2FC942C8EF7EE00CCF8DD /* HomeVC.swift */; };
 		BEC2FC972C8EF7EE00CCF8DD /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEC2FC952C8EF7EE00CCF8DD /* HomeVC.xib */; };
 		BEC2FC9A2C8EF86000CCF8DD /* TransferAmountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC2FC982C8EF86000CCF8DD /* TransferAmountVC.swift */; };
@@ -105,6 +106,7 @@
 		BE96451A2C8B53CA0017201F /* UIColor+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Gradient.swift"; sourceTree = "<group>"; };
 		BE96451C2C8B82250017201F /* SignUpAdditionalInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpAdditionalInfoVC.swift; sourceTree = "<group>"; };
 		BE96451D2C8B82250017201F /* SignUpAdditionalInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpAdditionalInfoVC.xib; sourceTree = "<group>"; };
+		BEABB90E2C92BE6E00F960B7 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		BEC2FC942C8EF7EE00CCF8DD /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		BEC2FC952C8EF7EE00CCF8DD /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		BEC2FC982C8EF86000CCF8DD /* TransferAmountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferAmountVC.swift; sourceTree = "<group>"; };
@@ -368,6 +370,7 @@
 			isa = PBXGroup;
 			children = (
 				BE9645182C8B4EDF0017201F /* AppManager.swift */,
+				BEABB90E2C92BE6E00F960B7 /* UserDefaultsManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -562,6 +565,7 @@
 			files = (
 				BE9645102C8B4D3F0017201F /* APIManager.swift in Sources */,
 				BEF1B6482C91D223006BA2B6 /* CountryCell.swift in Sources */,
+				BEABB90F2C92BE6F00F960B7 /* UserDefaultsManager.swift in Sources */,
 				BE96451B2C8B53CA0017201F /* UIColor+Gradient.swift in Sources */,
 				BECC04B42C8CDCC70087D59A /* String+Trim.swift in Sources */,
 				BEEA40692C8CAAAC009171BA /* TextFieldHelper.swift in Sources */,

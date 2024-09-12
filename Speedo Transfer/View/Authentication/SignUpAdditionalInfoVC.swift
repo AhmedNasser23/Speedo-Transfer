@@ -8,6 +8,8 @@
 
 import UIKit
 
+var userData: UserBasicData!
+
 class SignUpAdditionalInfoVC: UIViewController, UITextFieldDelegate {
 
     // MARK: - Outlets
@@ -17,6 +19,7 @@ class SignUpAdditionalInfoVC: UIViewController, UITextFieldDelegate {
     
     // MARK: - Properties
     var datePicker = UIDatePicker()
+    
     
     private var presenter: SignUpPresenterProtocol!
 
@@ -32,9 +35,9 @@ class SignUpAdditionalInfoVC: UIViewController, UITextFieldDelegate {
         setupCountryTextField()
     }
 
-    // MARK: - Action Methods
+    // MARK: - Action Methods 
     @IBAction func continueBtnTapped(_ sender: UIButton) {
-        self.presenter.tryRegister?(country: countryTextField.text, dateOfBirth: dateOfBirthTextField.text)
+        self.presenter.tryRegister!(country: countryTextField.text ?? "", dateOfBirth: dateOfBirthTextField.text ?? "")
     }
 
     @IBAction func signInBtnTapped(_ sender: UIButton) {

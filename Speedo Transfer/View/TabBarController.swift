@@ -13,6 +13,7 @@ class TabBarController: UITabBarController {
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        UserDefaultsManager.shared().isLoggedin = true
         self.setupTabs()
         configureTabBarAppearance()
     }

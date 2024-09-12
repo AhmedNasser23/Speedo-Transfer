@@ -104,23 +104,52 @@ class AuthenticationPresenter {
 }
 
 extension AuthenticationPresenter: SignUpPresenterProtocol, LoginPresenterProtocol {
-    func tryLogin(email: String?, password: String?) {
+    func tryLogin(email: String, password: String) {
         if self.isValidData(email: email, password: password) {
-                self.view.goToNextStep()
+            APIManager.login(email: email, password:password) { result in
+                switch result {
+                case .success():
+                    print("Login successful, token saved in UserDefaults")
+                    self.view.goToNextStep()
+                case .failure(let error):
+                    self.view.showMessage(title: "Sorry", message: "Login failed with error: \(error.localizedDescription)")
+                }
+            }
         }
     }
     
-    func tryRegister(name: String?, email: String?, password: String?, confirmedPassword: String?) {
+    func tryRegister(name: String, email: String, password: String, confirmedPassword: String) {
         if self.isValidData(name: name, email: email, password: password, confirmedPassword: confirmedPassword) {
             if self.isConfimredPassword(password: password, conPassowrd: confirmedPassword) {
+                let userBasicData: UserBasicData = UserBasicData(name: name, email: email, password: password)
+                userData = userBasicData
                 self.view.goToNextStep()
             }
         }
     }
     
-    func tryRegister(country: String?, dateOfBirth: String?) {
+    func tryRegister(country: String, dateOfBirth: String) {
         if self.isValidData(country: country, dateOfBirth: dateOfBirth) {
-                self.view.goToNextStep()
+            
+            let userRequest: UserRequest = UserRequest(name: userData.name, email: userData.email, password: userData.password, country: country, dateOfBirth: dateOfBirth)
+            
+                APIManager.registerUser(user: userRequest) { result in
+                    switch result {
+                    case .success(let userResponse):
+                        print("User ID: \(userResponse.id)")
+                        for account in userResponse.accounts {
+                            print("Account Number: \(account.accountNumber)")
+                            print("Balance: \(account.balance)")
+                            print("Currency: \(account.currency)")
+                            print("Account Name: \(account.accountName)")
+                            print("----------------------")
+                            self.view.goToNextStep()
+                        }
+                    case .failure(let error):
+                        print("Error: \(error)")
+                        self.view?.showMessage(title: "Sorry", message: "This email Already Exist")
+                    }
+                }
         }
     }
 }
