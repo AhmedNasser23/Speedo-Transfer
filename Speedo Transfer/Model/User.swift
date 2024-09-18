@@ -67,7 +67,6 @@ struct LoginRequest: Encodable {
     }
 }
 
-// Response Model
 struct LoginResponse: Decodable {
     let token: String
     

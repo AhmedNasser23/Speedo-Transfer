@@ -11,8 +11,5 @@ class MyCardsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setUpBackground(innerView: nil)
     }
-
-
 }
