@@ -7,6 +7,8 @@
 
 import Foundation
 
+var userData: UserBasicData!
+
 struct UserBasicData {
     let name:  String
     let email: String
@@ -20,7 +22,7 @@ struct UserRequest: Codable {
     let password: String
     let country: String
     let dateOfBirth: String
-    let phoneNumber: String = "0111111111"
+    let phoneNumber: String = "0123456789"
     
     enum CodingKeys: String, CodingKey {
         case name = "name"
@@ -57,7 +59,7 @@ struct Account: Codable {
 }
 
 
-struct LoginRequest: Encodable {
+struct LoginRequestModel: Encodable {
     let email: String
     let password: String
     
@@ -67,7 +69,7 @@ struct LoginRequest: Encodable {
     }
 }
 
-struct LoginResponse: Decodable {
+struct LoginResponseModel: Decodable {
     let token: String
     
     enum CodingKeys: String, CodingKey {

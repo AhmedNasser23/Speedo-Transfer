@@ -11,8 +11,9 @@ class transactionCell: UITableViewCell {
 
     // MARK: - Outlets
     @IBOutlet weak var recipientNameLabel: UILabel!
-    @IBOutlet weak var transactionDateLabel: UILabel!
+    @IBOutlet weak var recipientAccountNumber: UILabel!
     @IBOutlet weak var transactionAmountLabel: UILabel!
+    @IBOutlet weak var transcationDateLabel: UILabel!
     
     // MARK: - Methods
     override func awakeFromNib() {
@@ -23,9 +24,10 @@ class transactionCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func configureCell() {
-        self.recipientNameLabel.text = "Ahmed Nasser"
-        self.transactionDateLabel.text = "Today 11:00 - Received"
-        self.transactionAmountLabel.text = "500"
+    func configureCell(transaction: Transaction) {
+        self.recipientNameLabel.text = transaction.senderName
+        self.recipientAccountNumber.text = transaction.senderAccountNumber
+        self.transactionAmountLabel.text = "\(transaction.amountTransferred)\(transaction.currency)"
+        self.transcationDateLabel.text = transaction.createdAt
     }
 }

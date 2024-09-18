@@ -37,8 +37,14 @@
                         <color key="textColor" red="0.52941176469999995" green="0.1176470588" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today 11:00 - Received" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6FX-2y-gHI">
-                        <rect key="frame" x="93.000000000000014" y="48.333333333333336" width="176.33333333333337" height="20.333333333333336"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12345678" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6FX-2y-gHI">
+                        <rect key="frame" x="93" y="48.333333333333336" width="78" height="20.333333333333336"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                        <color key="textColor" systemColor="systemGray2Color"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2024-09-18" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0zg-jq-xKg">
+                        <rect key="frame" x="235" y="48" width="94" height="20.333333333333329"/>
                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                         <color key="textColor" systemColor="systemGray2Color"/>
                         <nil key="highlightedColor"/>
@@ -51,15 +57,18 @@
                     <constraint firstItem="uMZ-IP-bji" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="11" id="Zra-Dg-R0i"/>
                     <constraint firstItem="uMZ-IP-bji" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="fDZ-I9-HMd"/>
                     <constraint firstItem="6jR-FN-JG4" firstAttribute="top" secondItem="uMZ-IP-bji" secondAttribute="top" id="fEC-fN-sJk"/>
+                    <constraint firstItem="0zg-jq-xKg" firstAttribute="top" secondItem="7Ic-6S-WmY" secondAttribute="bottom" constant="19.666666666666671" id="iqG-6i-9HY"/>
                     <constraint firstItem="6FX-2y-gHI" firstAttribute="leading" secondItem="6jR-FN-JG4" secondAttribute="leading" id="j7F-xO-MAG"/>
                     <constraint firstItem="6FX-2y-gHI" firstAttribute="top" secondItem="6jR-FN-JG4" secondAttribute="bottom" constant="18" id="n3d-AH-4No"/>
+                    <constraint firstItem="0zg-jq-xKg" firstAttribute="trailing" secondItem="7Ic-6S-WmY" secondAttribute="trailing" id="pJp-1A-7S7"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="recipientAccountNumber" destination="6FX-2y-gHI" id="0Nt-Xq-SI7"/>
                 <outlet property="recipientNameLabel" destination="6jR-FN-JG4" id="xzb-52-ngL"/>
                 <outlet property="transactionAmountLabel" destination="7Ic-6S-WmY" id="opc-Ta-UGM"/>
-                <outlet property="transactionDateLabel" destination="6FX-2y-gHI" id="0Nt-Xq-SI7"/>
+                <outlet property="transcationDateLabel" destination="0zg-jq-xKg" id="Ni7-9u-tK4"/>
             </connections>
             <point key="canvasLocation" x="130.37383177570092" y="107.88336933045358"/>
         </tableViewCell>

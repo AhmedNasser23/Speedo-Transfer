@@ -31,7 +31,7 @@ class SignUpBasicInfoVC: UIViewController {
     
     // MARK: - Actions
     @IBAction func signUpBtnTapped(_ sender: UIButton) {
-        self.presenter.tryRegister!(name: fullNameTextField.text ?? "", email: emailTextField.text ?? "", password: passwordTextField.text ?? "", confirmedPassword: confirmedPasswordTextField.text ?? "")
+        self.presenter.tryRegister!(name: fullNameTextField.text, email: emailTextField.text, password: passwordTextField.text, confirmedPassword: confirmedPasswordTextField.text)
     }
     
     @IBAction func signInBtnTapped(_ sender: UIButton) {
@@ -51,6 +51,9 @@ class SignUpBasicInfoVC: UIViewController {
 
         addPasswordToggle(to: passwordTextField)
         addPasswordToggle(to: confirmedPasswordTextField)
+        
+        passwordTextField.textContentType = .password
+        confirmedPasswordTextField.textContentType = .password
     }
 }
 

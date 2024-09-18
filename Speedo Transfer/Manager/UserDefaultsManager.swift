@@ -43,4 +43,45 @@ class UserDefaultsManager {
             return def.bool(forKey: "isOpendBefore")
         }
     }
+    
+    var userData: UserResponse? {
+        set {
+            if let userData = newValue {
+                let encoder = JSONEncoder()
+                do {
+                    let data = try encoder.encode(userData)
+                    def.set(data, forKey: "userData")
+                } catch {
+                    print("Error encoding userData: \(error)")
+                }
+            } else {
+                def.removeObject(forKey: "userData")
+            }
+        }
+        get {
+            if let data = def.data(forKey: "userData") {
+                let decoder = JSONDecoder()
+                do {
+                    let userData = try decoder.decode(UserResponse.self, from: data)
+                    return userData
+                } catch {
+                    print("Error decoding userData: \(error)")
+                    return nil
+                }
+            }
+            return nil
+        }
+    }
+    
+    var token: String? {
+        set {
+            def.set(newValue, forKey: "authToken")
+        }
+        get {
+            if def.object(forKey: "authToken") == nil {
+                return nil
+            }
+            return def.string(forKey: "authToken")
+        }
+    }
 }

@@ -28,7 +28,6 @@ extension UIViewController {
         textField.rightViewMode = .always
     }
 
-    // Action to toggle password visibility
     @objc func togglePasswordVisibility(_ sender: UIButton) {
         sender.isSelected.toggle()
         if let textField = sender.superview as? UITextField {

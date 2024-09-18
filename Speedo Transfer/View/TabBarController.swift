@@ -20,7 +20,7 @@ class TabBarController: UITabBarController {
     
     // MARK: - Tab Setup
     private func setupTabs() {
-        let home = self.createNav(title: "Home", image: UIImage(named: "Home.png"), vc: HomeVC())
+        let home = self.createNav(title: "Home", image: UIImage(named: "home.png"), vc: HomeVC())
         let transfer = self.createNav(title: "Transfer", image: UIImage(named: "Transfer.png"), vc: TransferAmountVC())
         let transactions = self.createNav(title: "Transactions", image: UIImage(named: "Transactions.png"), vc: TransactionsVC())
         let myCards = self.createNav(title: "My Cards", image: UIImage(named: "Cards.png"), vc: MyCardsVC())

@@ -10,6 +10,7 @@ import UIKit
 class MyCardsVC: UIViewController {
 
     override func viewDidLoad() {
+        self.setUpBackground(innerView: nil)
         super.viewDidLoad()
     }
 }

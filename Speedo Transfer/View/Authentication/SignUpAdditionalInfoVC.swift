@@ -8,8 +8,6 @@
 
 import UIKit
 
-var userData: UserBasicData!
-
 class SignUpAdditionalInfoVC: UIViewController, UITextFieldDelegate {
 
     // MARK: - Outlets

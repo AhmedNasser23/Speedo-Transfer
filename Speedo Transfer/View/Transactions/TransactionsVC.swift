@@ -13,8 +13,4 @@ class TransactionsVC: UIViewController {
         super.viewDidLoad()
         self.setUpBackground(innerView: nil)
     }
-
-
-
-
 }

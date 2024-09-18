@@ -9,13 +9,15 @@
 import Foundation
 
 class AuthenticationPresenter {
+    
+    // MARK: - Properties
     weak var view: AuthenticationProtocol!
     
     init(view: AuthenticationProtocol) {
         self.view = view
     }
     
-    // For SignUp
+    // MARK: - Methods
     func isValidData(name: String?, email: String?, password: String?, confirmedPassword: String?) -> Bool {
         guard let name = name?.trimmed, !name.isEmpty else {
             self.view.showMessage(title: "Sorry", message: "Please, Enter your name")
@@ -89,7 +91,6 @@ class AuthenticationPresenter {
         return true
     }
     
-    // For LoginVC
     func isValidData(email: String?, password: String?) -> Bool {
         guard let email = email?.trimmed, email.trimmed != "" else {
             self.view.showMessage(title: "Sorry", message: "Please, Enter your email")
@@ -104,9 +105,9 @@ class AuthenticationPresenter {
 }
 
 extension AuthenticationPresenter: SignUpPresenterProtocol, LoginPresenterProtocol {
-    func tryLogin(email: String, password: String) {
+    func tryLogin(email: String!, password: String!) {
         if self.isValidData(email: email, password: password) {
-            APIManager.login(email: email, password:password) { result in
+            APIManager.login(loginRequestModel: LoginRequestModel(email: email, password: password)) { result in
                 switch result {
                 case .success():
                     print("Login successful, token saved in UserDefaults")
@@ -130,12 +131,13 @@ extension AuthenticationPresenter: SignUpPresenterProtocol, LoginPresenterProtoc
     
     func tryRegister(country: String, dateOfBirth: String) {
         if self.isValidData(country: country, dateOfBirth: dateOfBirth) {
-            
-            let userRequest: UserRequest = UserRequest(name: userData.name, email: userData.email, password: userData.password, country: country, dateOfBirth: dateOfBirth)
+
+            let userRequest: UserRequest = UserRequest(name: userData.name, email: userData.email, password: userData.password, country: country, dateOfBirth: DateConverter.convertDateFormat(dateString: dateOfBirth))
             
                 APIManager.registerUser(user: userRequest) { result in
                     switch result {
                     case .success(let userResponse):
+                        UserDefaultsManager.shared().userData = userResponse
                         print("User ID: \(userResponse.id)")
                         for account in userResponse.accounts {
                             print("Account Number: \(account.accountNumber)")
@@ -147,7 +149,7 @@ extension AuthenticationPresenter: SignUpPresenterProtocol, LoginPresenterProtoc
                         }
                     case .failure(let error):
                         print("Error: \(error)")
-                        self.view?.showMessage(title: "Sorry", message: "This email Already Exist")
+                        self.view?.showMessage(title: "Sorry", message: error.localizedDescription)
                     }
                 }
         }

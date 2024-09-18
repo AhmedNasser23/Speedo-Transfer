@@ -25,6 +25,8 @@
 		BE5B8B992C8DBC2000092BF0 /* ErrorServer.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE5B8B972C8DBC2000092BF0 /* ErrorServer.xib */; };
 		BE5D74C72C8B44B000054A6A /* Pods_Speedo_Transfer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA466222A5BEEEA82A35D197 /* Pods_Speedo_Transfer.framework */; };
 		BE5D74C82C8B44B000054A6A /* Pods_Speedo_Transfer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA466222A5BEEEA82A35D197 /* Pods_Speedo_Transfer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE9478682C9B371D00E8186A /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9478672C9B371D00E8186A /* Transaction.swift */; };
+		BE94786A2C9B395D00E8186A /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9478692C9B395D00E8186A /* HomePresenter.swift */; };
 		BE9645102C8B4D3F0017201F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE96450F2C8B4D3F0017201F /* APIManager.swift */; };
 		BE9645152C8B4E1D0017201F /* SignUpBasicInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9645132C8B4E1C0017201F /* SignUpBasicInfoVC.swift */; };
 		BE9645162C8B4E1D0017201F /* SignUpBasicInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE9645142C8B4E1C0017201F /* SignUpBasicInfoVC.xib */; };
@@ -32,6 +34,7 @@
 		BE96451B2C8B53CA0017201F /* UIColor+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE96451A2C8B53CA0017201F /* UIColor+Gradient.swift */; };
 		BE96451E2C8B82250017201F /* SignUpAdditionalInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE96451C2C8B82250017201F /* SignUpAdditionalInfoVC.swift */; };
 		BE96451F2C8B82250017201F /* SignUpAdditionalInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE96451D2C8B82250017201F /* SignUpAdditionalInfoVC.xib */; };
+		BE969E1F2C9B0DBD002241E0 /* DateConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE969E1E2C9B0DBD002241E0 /* DateConverter.swift */; };
 		BEABB90F2C92BE6F00F960B7 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABB90E2C92BE6E00F960B7 /* UserDefaultsManager.swift */; };
 		BEC2FC962C8EF7EE00CCF8DD /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC2FC942C8EF7EE00CCF8DD /* HomeVC.swift */; };
 		BEC2FC972C8EF7EE00CCF8DD /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEC2FC952C8EF7EE00CCF8DD /* HomeVC.xib */; };
@@ -99,6 +102,8 @@
 		BE5B8B932C8DBBF800092BF0 /* ErrorInternetConnection.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorInternetConnection.xib; sourceTree = "<group>"; };
 		BE5B8B962C8DBC1F00092BF0 /* ErrorServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorServer.swift; sourceTree = "<group>"; };
 		BE5B8B972C8DBC2000092BF0 /* ErrorServer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorServer.xib; sourceTree = "<group>"; };
+		BE9478672C9B371D00E8186A /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		BE9478692C9B395D00E8186A /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		BE96450F2C8B4D3F0017201F /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		BE9645132C8B4E1C0017201F /* SignUpBasicInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpBasicInfoVC.swift; sourceTree = "<group>"; };
 		BE9645142C8B4E1C0017201F /* SignUpBasicInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpBasicInfoVC.xib; sourceTree = "<group>"; };
@@ -106,6 +111,7 @@
 		BE96451A2C8B53CA0017201F /* UIColor+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Gradient.swift"; sourceTree = "<group>"; };
 		BE96451C2C8B82250017201F /* SignUpAdditionalInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpAdditionalInfoVC.swift; sourceTree = "<group>"; };
 		BE96451D2C8B82250017201F /* SignUpAdditionalInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpAdditionalInfoVC.xib; sourceTree = "<group>"; };
+		BE969E1E2C9B0DBD002241E0 /* DateConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConverter.swift; sourceTree = "<group>"; };
 		BEABB90E2C92BE6E00F960B7 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		BEC2FC942C8EF7EE00CCF8DD /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		BEC2FC952C8EF7EE00CCF8DD /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
@@ -197,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				BEF1B64E2C92370A006BA2B6 /* User.swift */,
+				BE9478672C9B371D00E8186A /* Transaction.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -222,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				BE03362E2C8CCBDA00445276 /* AuthenticationPresenter.swift */,
+				BE9478692C9B395D00E8186A /* HomePresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -389,6 +397,7 @@
 			children = (
 				BEEA40682C8CAAAB009171BA /* TextFieldHelper.swift */,
 				BE0336302C8CCC3300445276 /* AuthenticationProtocol.swift */,
+				BE969E1E2C9B0DBD002241E0 /* DateConverter.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -577,8 +586,10 @@
 				BECC04B22C8CDCB20087D59A /* UIViewController+Alert+Toggle+SetUpScreen.swift in Sources */,
 				BEC2FC9E2C8EF89900CCF8DD /* TransactionsVC.swift in Sources */,
 				BEC2FCA92C8EFDD700CCF8DD /* MyCardsVC.swift in Sources */,
+				BE969E1F2C9B0DBD002241E0 /* DateConverter.swift in Sources */,
 				BEC2FC9A2C8EF86000CCF8DD /* TransferAmountVC.swift in Sources */,
 				BE1392C52C9061450092CE4C /* TransferConfirmationVC.swift in Sources */,
+				BE94786A2C9B395D00E8186A /* HomePresenter.swift in Sources */,
 				BE1392C92C90848A0092CE4C /* TransferCompletionVC.swift in Sources */,
 				BE5B8B982C8DBC2000092BF0 /* ErrorServer.swift in Sources */,
 				BEEA40662C8CA7F1009171BA /* SignInVC.swift in Sources */,
@@ -588,6 +599,7 @@
 				BEF1B64D2C922E6E006BA2B6 /* FavoriteTableView.swift in Sources */,
 				BED3C7CB2C8AF662005DA505 /* AppDelegate.swift in Sources */,
 				BED556032C8F7E960091476E /* transactionCell.swift in Sources */,
+				BE9478682C9B371D00E8186A /* Transaction.swift in Sources */,
 				BE590F322C8F4CF3008387B9 /* FirstScreenVC.swift in Sources */,
 				BEEA406C2C8CC063009171BA /* TimeOutVC.swift in Sources */,
 				BE9645152C8B4E1D0017201F /* SignUpBasicInfoVC.swift in Sources */,
