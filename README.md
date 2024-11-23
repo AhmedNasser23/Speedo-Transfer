@@ -80,18 +80,19 @@
 ## 📸 **Screenshots**
 
 ### Welcome Screens  
-<img src="https://github.com/user-attachments/assets/952a7ef3-beb5-49cc-ad01-baa7813fa346" width="400" height="500" />  
-<img src="https://github.com/user-attachments/assets/f1f3d03c-c354-43f9-a49a-e4580e6e799c" width="400" height="500" />  
-<img src="https://github.com/user-attachments/assets/0c8a108b-ec18-4b94-acef-f620b8118343" width="400" height="500" />
+<img src="https://github.com/user-attachments/assets/952a7ef3-beb5-49cc-ad01-baa7813fa346" width="400" height="600" />  
+<img src="https://github.com/user-attachments/assets/f1f3d03c-c354-43f9-a49a-e4580e6e799c" width="400" height="600" />  
+<img src="https://github.com/user-attachments/assets/0c8a108b-ec18-4b94-acef-f620b8118343" width="400" height="600" />
 
 ---
 
 ### Login/Register Screens  
-<img src="https://github.com/user-attachments/assets/e494ed73-b9af-4619-ba5d-8500747fafbd" width="400" height="500" />  
-<img src="https://github.com/user-attachments/assets/7145cee2-19ca-4234-8f97-fbca05d8ddba" width="400" height="500" />
+<img src="https://github.com/user-attachments/assets/e494ed73-b9af-4619-ba5d-8500747fafbd" width="400" height="600" />  
+<img src="https://github.com/user-attachments/assets/7145cee2-19ca-4234-8f97-fbca05d8ddba" width="400" height="600" />
 
 ---
 
 ### Home Screens  
-<img src="https://github.com/user-attachments/assets/d7ade637-3e6a-4fdb-b227-88994b109196" width="400" height="500" />
+<img src="https://github.com/user-attachments/assets/d7ade637-3e6a-4fdb-b227-88994b109196" width="400" height="600" />
+
 
