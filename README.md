@@ -6,26 +6,26 @@
 
 ## 🚀 **Key Features**  
 
-1. **User Profiles**  
+1. **👤 User Profiles**  
    - Easy registration with secure authentication.  
    - Personalizable user profiles, editable details such as name, email, and password.  
 
-2. **Account Management**  
+2. **💼 Account Management**  
    - View balances, track transactions, and manage funds.  
    - Sub-accounts for budgeting, categorizing credits and debits.  
 
-3. **Fund Transfers**  
+3. **💸 Fund Transfers**  
    - Perform **internal** transfers (within the app) and **external** transfers (to bank accounts or other users).  
    - Verify recipient details via an API before completing any transactions for added security.  
 
-4. **Notifications & Alerts**  
+4. **🔔 Notifications & Alerts**  
    - Get instant notifications for successful transactions and errors (e.g., insufficient funds).  
    - Re-login required after two minutes of inactivity for enhanced security.
 
-5. **Favorites Management**  
+5. **⭐ Favorites Management**  
    - Save, edit, and delete frequent recipients for fast and easy transfers.  
 
-6. **Error Handling**  
+6. **⚠️ Error Handling**  
    - Friendly error messages for connectivity issues and failed transactions.  
 
 ---
@@ -55,17 +55,17 @@
 
 ## 🔒 **Security Features**  
 
-- **Encrypted user credentials** for secure login and authentication.  
-- **Session timeout** after inactivity to protect user data.  
-- **Password Validation**: Enforces strong password requirements (e.g., minimum 6 characters, one uppercase letter, one special character).
+- **🔐 Encrypted user credentials** for secure login and authentication.  
+- **⏱️ Session timeout** after inactivity to protect user data.  
+- **🔑 Password Validation**: Enforces strong password requirements (e.g., minimum 6 characters, one uppercase letter, one special character).
 
 ---
 
 ## 📈 **Future Enhancements**  
 
-1. Multi-language support for greater accessibility.  
-2. Push notifications for real-time transaction updates.  
-3. Machine learning to suggest smart budgeting strategies via sub-accounts.
+1. 🌍 Multi-language support for greater accessibility.  
+2. 📲 Push notifications for real-time transaction updates.  
+3. 🤖 Machine learning to suggest smart budgeting strategies via sub-accounts.
 
 ---
 
@@ -94,6 +94,3 @@
 
 ### Home Screens  
 <img src="https://github.com/user-attachments/assets/d7ade637-3e6a-4fdb-b227-88994b109196" width="400" height="700" />
-
-
-
